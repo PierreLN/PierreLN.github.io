@@ -5,8 +5,8 @@ import MainPage from './components/MainPage/MainPage';
 function App() {
   return (
     <div className="App">
-      <SideMenu></SideMenu>
-      <MainPage></MainPage>
+      {/* <SideMenu></SideMenu>
+      <MainPage></MainPage> */}
       helloooo
     </div>
   );
