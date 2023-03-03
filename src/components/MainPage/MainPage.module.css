@@ -1,0 +1,50 @@
+.main_page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: green;
+  margin-left: 200px;
+}
+
+.main_page h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.main_page p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: center;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.main_page button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.main_page button:hover {
+  background-color: #444;
+}
+
+@media screen and (max-width: 768px) {
+  .main_page h1 {
+    font-size: 2.5rem;
+  }
+  
+  .main_page p {
+    font-size: 1.2rem;
+  }
+  
+  .main_page button {
+    font-size: 1rem;
+  }
+}
