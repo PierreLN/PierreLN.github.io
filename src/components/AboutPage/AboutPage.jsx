@@ -7,42 +7,42 @@ import styles from "./AboutPage.module.css";
 function AboutPage(props) {
   const title = <h2>About me</h2>;
   const presentation = (
-    <p>
-      <p>Hello there and welcome to my portfolio website! </p>
+    <div>
+      <div>Hello there and welcome to my portfolio website! </div>
       <br></br>
-      <p>
-        <p>
+      <div>
+        <div>
           As a full stack developer, I strive to create web applications that
           not only function efficiently, but also provide a seamless and
           enjoyable user experience. My expertise in both front-end and back-end
           development, coupled with my passion for technology, allows me to
           bring ideas to life and solve complex problems with ease.
-        </p>
+        </div>
         <br></br>
-        <p>
+        <div>
           From HTML/CSS, JavaScript and React on the front-end, to Python, C#,
           Neo4j, MongoDB, and SQL on the back-end, I have experience working
           with a variety of tools and technologies. Whether it's designing and
           building APIs, creating responsive UIs, or implementing efficient
           database structures, I am always eager to take on new challenges and
           learn new skills.
-        </p>
+        </div>
         <br></br>
-        <p>
+        <div>
           On this website, you will find a collection of my projects, skills,
           and experiences as a full stack developer. I hope that my work will
           give you a glimpse into my approach to development and my passion for
           creating impactful solutions. Please feel free to explore, and if you
           have any questions or would like to discuss potential opportunities,
           don't hesitate to reach out.
-        </p>
-      </p>
+        </div>
+      </div>
       <br></br>
-      <p>
+      <div>
         Thank you for visiting, and I hope you enjoy your time here! Best
         regards,
-      </p>
-    </p>
+      </div>
+    </div>
   );
 
   return (
@@ -55,8 +55,8 @@ function AboutPage(props) {
         ></img>
       </Card>
       <Card className={styles.description}>
-        <h1 className={styles.title}>{title}</h1>
-        <p className={styles.presentation}>{presentation}</p>
+        <div className={styles.title}>{title}</div>
+        <div className={styles.presentation}>{presentation}</div>
       </Card>
     </div>
   );

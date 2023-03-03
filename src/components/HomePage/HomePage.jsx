@@ -7,12 +7,12 @@ function HomePage(props) {
   return (
     <div className={styles.homepage}>
       <Card className={styles.homepage_section}>
-        <p className={styles.welcome}>
+        <div className={styles.welcome}>
           Welcome to my corner of the internet!
           <p className={styles.name}>
             {sign} I'm Pierre {sign}
           </p>
-        </p>
+        </div>
         <div className={styles.presentation}>
           <p className={styles.title}>Full stack developer</p>
           <p className={styles.porfolio}>Porfolio</p>

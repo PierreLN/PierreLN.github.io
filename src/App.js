@@ -1,14 +1,20 @@
-import React from "react";
+import React, { useState, UseState } from "react";
 import "./App.css";
-import SideMenu from './components/SideMenu/SideMenu';
-import MainPage from './components/MainPage/MainPage';
+import SideMenu from "./components/SideMenu/SideMenu";
+import MainPage from "./components/MainPage/MainPage";
 
 function App() {
+  const [location, setlocation] = useState("home");
+  
+  const locationHandler = (data) => {
+    setlocation(data);
+  };
+
   return (
     <>
       <div>
-        <SideMenu></SideMenu>
-        <MainPage></MainPage>
+        <SideMenu onMove={locationHandler}></SideMenu>
+        <MainPage selectedPage={location}></MainPage>
       </div>
     </>
   );
