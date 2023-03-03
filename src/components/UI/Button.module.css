@@ -8,6 +8,7 @@
   color: #ffffff;
   border: none;
   border-bottom: none;
+  transition: all 0.2s ease;
 }
 
 .button:focus {
@@ -17,7 +18,7 @@
 .button:hover,
 .button:active {
   border-bottom: white 2px solid;
-  color: #7bea7b;
+  transform: scale(1.2);
 }
 
 @media (min-width: 768px) {

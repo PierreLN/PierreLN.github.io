@@ -6,12 +6,27 @@ function SideMenu() {
   return (
     <div className={styles.side_menu}>
       <ul>
-        <li><Button>Home</Button></li>
-        <li><Button>About</Button></li>
-        <li><Button>Service</Button></li>
-        <li><Button>Project</Button></li>
-        <li><Button>Clients</Button></li>
-        <li><Button>Contact</Button></li>
+        <li>
+          <Button>HOME</Button>
+        </li>
+        <li>
+          <Button>ABOUT</Button>
+        </li>
+        <li>
+          <Button>SERVICES</Button>
+        </li>
+        <li>
+          <Button>PROJECTS</Button>
+        </li>
+        <li>
+          <Button>CLIENTS</Button>
+        </li>
+        <li>
+          <Button>CONTACT</Button>
+        </li>
+        <li>
+          <Button>FR</Button>
+        </li>
       </ul>
     </div>
   );

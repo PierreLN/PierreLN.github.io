@@ -1,11 +1,16 @@
 .main_page {
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-image: url('../../Image/Rice_mountain_mainpage.jpg');
-  background-color: rgba(255, 255, 255, 0.5);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url("../../Image/Rice_mountain_mainpage.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -24,13 +29,23 @@
   margin-bottom: 2rem;
 }
 
+.profil_image {
+  width: 25%;
+  height: auto;
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  border-radius: 100%;
+  border: 2px solid white;
+
+}
+
 @media screen and (max-width: 768px) {
   .main_page h1 {
     font-size: 2.5rem;
   }
-  
+
   .main_page p {
     font-size: 1.2rem;
   }
-  
 }
