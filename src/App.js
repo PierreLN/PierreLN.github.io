@@ -8,6 +8,7 @@ function App() {
       {/* <SideMenu></SideMenu>
       <MainPage></MainPage> */}
       helloooo
+      this is a test page
     </div>
   );
 }
