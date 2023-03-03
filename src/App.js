@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { HashRouter, Route, Link } from "react-router-dom";
+import { HashRouter, Route, Link, Routes } from "react-router-dom";
 import "./App.css";
 // import SideMenu from './components/SideMenu/SideMenu';
 // import MainPage from './components/MainPage/MainPage';
@@ -8,6 +8,7 @@ function App() {
   return (
     <HashRouter basename="/">
       <div>
+        helloooo
         <ul>
           <li>
             <Link to="/">Home</Link>
@@ -17,8 +18,10 @@ function App() {
           </li>
         </ul>
         <hr />
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
+        <Routes>
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+        </Routes>
       </div>
     </HashRouter>
   );
