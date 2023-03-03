@@ -9,7 +9,7 @@ function App() {
       <MainPage></MainPage> */}
       helloooo
       this is a test page
-      hjlhkl
+      6
     </div>
   );
 }
