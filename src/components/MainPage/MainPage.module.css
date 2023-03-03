@@ -4,8 +4,12 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: green;
-  margin-left: 200px;
+  background-color: #8FBC8F;
+  background-image: url('../../Image/BlackGreen_mainpage.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: aliceblue;
 }
 
 .main_page h1 {
