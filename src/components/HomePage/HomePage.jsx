@@ -4,14 +4,18 @@ import Card from "../UI/Card";
 
 function HomePage(props) {
 
-
-    return (
-      <div>
-        <Card> Greetings and welcome to my corner of the internet!!</Card>
-        <Card>My name is Pierre</Card>
-        <Card>I'm a full stack developer</Card>
-      </div>
-    );
+    const sign = '</>'
+  return (
+    <div className={styles.homepage}>
+      <Card className={styles.homepage_section}>
+        <p>Welcome to my corner of the internet!!</p>
+        <p>My name is Pierre</p>
+        <p>Full stack {sign}</p>
+        <p>developer</p>
+        <p>Porfolio</p>
+      </Card>
+    </div>
+  );
 }
 
 export default HomePage;

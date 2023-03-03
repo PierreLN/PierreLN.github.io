@@ -7,7 +7,7 @@ function MainPage(props) {
   const aboutPage = <AboutPage></AboutPage>;
   const homePage = <HomePage></HomePage>;
 
-  const [selectedPage, setSelectedPage] = useState(aboutPage);
+  const [selectedPage, setSelectedPage] = useState(homePage);
 
 
   return <div className={styles.main_page}>{selectedPage}</div>;
