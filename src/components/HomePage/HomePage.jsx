@@ -6,6 +6,10 @@ function HomePage(props) {
   const signEnd = "/>";
   const signstart = "<";
 
+  const onClickHandler = () => {
+    props.onClick("project");
+  };
+
   return (
     <div className={styles.homepage}>
       <Card className={styles.homepage_section}>
@@ -15,7 +19,7 @@ function HomePage(props) {
             {signstart} I'm Pierre {signEnd}
           </p>
         </div>
-        <div className={styles.presentation}>
+        <div className={styles.presentation} onClick={onClickHandler}>
           <p className={styles.title}>Full stack developer</p>
           <p className={styles.porfolio}>Porfolio</p>
         </div>

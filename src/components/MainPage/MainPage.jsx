@@ -6,7 +6,11 @@ import ProjectPage from "../ProjectPage/ProjectPage";
 import ContactPage from "../ContactPage/ContactPage";
 
 function MainPage(props) {
-  const homePage = <HomePage></HomePage>;
+  const selected = (data) => {
+    setCurrentPage(projectPage);
+  };
+
+  const homePage = <HomePage onClick={selected}></HomePage>;
   const aboutPage = <AboutPage></AboutPage>;
   const projectPage = <ProjectPage></ProjectPage>;
   const contactPage = <ContactPage></ContactPage>;
