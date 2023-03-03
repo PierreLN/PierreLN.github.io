@@ -25,20 +25,6 @@
   margin-bottom: 2rem;
 }
 
-.main_page button {
-  background-color: #333;
-  color: #fff;
-  border: none;
-  padding: 1rem 2rem;
-  font-size: 1.2rem;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.main_page button:hover {
-  background-color: #444;
-}
-
 @media screen and (max-width: 768px) {
   .main_page h1 {
     font-size: 2.5rem;
@@ -48,7 +34,4 @@
     font-size: 1.2rem;
   }
   
-  .main_page button {
-    font-size: 1rem;
-  }
 }
