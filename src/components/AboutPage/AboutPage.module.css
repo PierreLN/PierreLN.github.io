@@ -25,23 +25,29 @@
   height: fit-content;
   margin-right: 10%;
   text-align: justify;
-  background-color: rgba(255, 255, 255, 0.2);
   color: black;
   padding: 2%;
   display: inline-block;
   width: 50%;
+  box-shadow: 0px 15px 40px 15px rgba(0, 0, 0, 0.5);
 }
 
 .title {
   align-items: center;
+  font-size: xx-large;
+  color: white;
 }
 
 .presentation {
   margin: auto;
   height: fit-content;
-  background-color: rgba(255, 255, 255, 0.8);
   color: black;
   padding: 2%;
   font-size: larger;
   font-family: "Times New Roman", Times, serif;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.9),
+    rgba(161, 210, 151, 0.7)
+  );
 }
