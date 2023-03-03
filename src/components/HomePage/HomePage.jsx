@@ -3,16 +3,20 @@ import styles from "./HomePage.module.css";
 import Card from "../UI/Card";
 
 function HomePage(props) {
-
-    const sign = '</>'
+  const sign = "</>";
   return (
     <div className={styles.homepage}>
       <Card className={styles.homepage_section}>
-        <p>Welcome to my corner of the internet!!</p>
-        <p>My name is Pierre</p>
-        <p>Full stack {sign}</p>
-        <p>developer</p>
-        <p>Porfolio</p>
+        <p className={styles.welcome}>
+          Welcome to my corner of the internet!
+          <p className={styles.name}>
+            {sign} I'm Pierre {sign}
+          </p>
+        </p>
+        <div className={styles.presentation}>
+          <p className={styles.title}>Full stack developer</p>
+          <p className={styles.porfolio}>Porfolio</p>
+        </div>
       </Card>
     </div>
   );
