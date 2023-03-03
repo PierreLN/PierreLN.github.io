@@ -4,12 +4,11 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #8FBC8F;
-  background-image: url('../../Image/BlackGreen_mainpage.jpg');
+  background-image: url('../../Image/Rice_mountain_mainpage.jpg');
+  background-color: rgba(255, 255, 255, 0.5);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  color: aliceblue;
 }
 
 .main_page h1 {

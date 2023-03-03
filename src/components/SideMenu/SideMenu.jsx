@@ -8,6 +8,9 @@ function SideMenu() {
       <ul>
         <li><Button>Home</Button></li>
         <li><Button>About</Button></li>
+        <li><Button>Service</Button></li>
+        <li><Button>Project</Button></li>
+        <li><Button>Clients</Button></li>
         <li><Button>Contact</Button></li>
       </ul>
     </div>

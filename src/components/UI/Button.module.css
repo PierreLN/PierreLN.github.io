@@ -1,32 +1,27 @@
 .button {
-    width: 100%;
-    font: inherit;
-    cursor: pointer;
-    box-shadow: #000000 0 10px 20px -10px;
-    box-sizing: border-box;
-    outline: 0 solid transparent;
-    touch-action: manipulation;
-    word-break: break-word;
-    display: block;
-    padding: 10px;
-    background-color: transparent;
-    color: #ffffff;
-    border-radius: 5px;
+  width: 100%;
+  font: inherit;
+  cursor: pointer;
+  display: block;
+  padding: 5px;
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  border-bottom: none;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:hover,
+.button:active {
+  border-bottom: white 2px solid;
+  color: #7bea7b;
+}
+
+@media (min-width: 768px) {
+  .button {
+    width: fit-content;
   }
-  
-  .button:focus {
-    outline: none;
-  }
-  
-  .button:hover,
-  .button:active {
-    border-color: #ffffff;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.26);
-  }
-  
-  
-  @media (min-width: 768px) {
-    .button {
-      width: fit-content;
-    }
-  }
+}
