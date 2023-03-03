@@ -8,22 +8,19 @@ import ContactPage from "../ContactPage/ContactPage";
 function MainPage(props) {
   const homePage = <HomePage></HomePage>;
   const aboutPage = <AboutPage></AboutPage>;
-  const projectPage = <ProjectPage></ProjectPage>
-    const contactPage = <ContactPage></ContactPage>;
+  const projectPage = <ProjectPage></ProjectPage>;
+  const contactPage = <ContactPage></ContactPage>;
 
-
-  const [currentPage, setCurrentPage] = useState(aboutPage);
+  const [currentPage, setCurrentPage] = useState(homePage);
 
   useEffect(() => {
     if (props.selectedPage === "about") {
       setCurrentPage(aboutPage);
     } else if (props.selectedPage === "home") {
       setCurrentPage(homePage);
-    }
-    else if (props.selectedPage === 'project') {
+    } else if (props.selectedPage === "project") {
       setCurrentPage(projectPage);
-    }
-        else if (props.selectedPage === 'contact') {
+    } else if (props.selectedPage === "contact") {
       setCurrentPage(contactPage);
     }
   }, [props.selectedPage]);
