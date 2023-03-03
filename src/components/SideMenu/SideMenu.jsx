@@ -1,24 +1,20 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./SideMenu.module.css";
 import Button from "../UI/Button";
 
 function SideMenu(props) {
-  // const [movingTo, setMovingTo] = useState()
-
-  let locationHome = "home";
-  let locationAbout = "about";
 
   const homePageHandler = () => {
-    props.onMove(locationHome);
+    props.onMove("home");
   };
   const aboutPageHandler = () => {
-    props.onMove(locationAbout);
+    props.onMove("about");
   };
   const ProjectPageHandler = () => {
-    console.log("projects...");
+    props.onMove("project");
   };
   const ContactPageHandler = () => {
-    console.log("contact...");
+    props.onMove("contact");
   };
 
   return (
