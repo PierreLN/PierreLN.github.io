@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.fd587720.css",
-    "main.js": "/static/js/main.363712db.js",
+    "main.css": "/static/css/main.20d337f0.css",
+    "main.js": "/static/js/main.f36b2153.js",
     "static/js/787.e3835ec5.chunk.js": "/static/js/787.e3835ec5.chunk.js",
     "static/media/Rice_mountain_mainpage.jpg": "/static/media/Rice_mountain_mainpage.4bbaf2c15af6f6dea030.jpg",
+    "static/media/profilImage.jpg": "/static/media/profilImage.fc40d09d1eb8fe6c55af.jpg",
     "index.html": "/index.html",
-    "main.fd587720.css.map": "/static/css/main.fd587720.css.map",
-    "main.363712db.js.map": "/static/js/main.363712db.js.map",
+    "main.20d337f0.css.map": "/static/css/main.20d337f0.css.map",
+    "main.f36b2153.js.map": "/static/js/main.f36b2153.js.map",
     "787.e3835ec5.chunk.js.map": "/static/js/787.e3835ec5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fd587720.css",
-    "static/js/main.363712db.js"
+    "static/css/main.20d337f0.css",
+    "static/js/main.f36b2153.js"
   ]
 }
