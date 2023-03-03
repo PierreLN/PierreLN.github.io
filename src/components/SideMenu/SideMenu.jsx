@@ -13,20 +13,20 @@ function SideMenu() {
           <Button>ABOUT</Button>
         </li>
         <li>
-          <Button>SERVICES</Button>
+          <Button>PROJECTS</Button>
         </li>
         <li>
-          <Button>PROJECTS</Button>
+          <Button>CONTACT</Button>
+        </li>
+        {/* <li>
+          <Button>SERVICES</Button>
         </li>
         <li>
           <Button>CLIENTS</Button>
         </li>
         <li>
-          <Button>CONTACT</Button>
-        </li>
-        <li>
           <Button>FR</Button>
-        </li>
+        </li> */}
       </ul>
     </div>
   );

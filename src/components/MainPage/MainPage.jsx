@@ -1,32 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./MainPage.module.css";
-import Button from "../UI/Button";
-import Card from "../UI/Card";
-import profilImage from "../../Image/profilImage.jpg";
+import AboutPage from "../AboutPage/AboutPage";
+import HomePage from "../HomePage/HomePage";
 
-function MainPage() {
-  const name = <h1>Pierre Long Nguyen</h1>;
-  const description = (
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut tortor
-      non purus dictum consectetur. Maecenas faucibus elit ut elit consequat, in
-      faucibus arcu sodales. Vestibulum tincidunt, augue quis commodo mollis,
-      quam justo ullamcorper magna, in molestie nunc nibh et nisl. Quisque eget
-      mi ut odio varius faucibus eget vel urna.
-    </p>
-  );
+function MainPage(props) {
+  const aboutPage = <AboutPage></AboutPage>;
+  const homePage = <HomePage></HomePage>;
 
-  return (
-    <div className={styles.main_page}>
-      <Card>
-        <img className={styles.profil_image} src={profilImage} alt="Profil"></img>
-      </Card>
-      <Card>{name}</Card>
-      <Card>{description}</Card>
+  const [selectedPage, setSelectedPage] = useState(aboutPage);
 
-      <Button>Learn More</Button>
-    </div>
-  );
+
+  return <div className={styles.main_page}>{selectedPage}</div>;
 }
 
 export default MainPage;

@@ -1,0 +1,47 @@
+.about_page {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.image {
+  display: inline-block;
+  width: 30%;
+  height: auto;
+  padding-left: 2.5%;
+}
+
+.profil_image {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  border-radius: 100%;
+  border: 2px solid white;
+}
+
+.description {
+  width: 70%;
+  height: fit-content;
+  margin-right: 10%;
+  text-align: justify;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: black;
+  padding: 2%;
+  display: inline-block;
+  width: 50%;
+}
+
+.title {
+  align-items: center;
+}
+
+.presentation {
+  margin: auto;
+  height: fit-content;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  padding: 2%;
+  font-size: larger;
+  font-family: "Times New Roman", Times, serif;
+}
