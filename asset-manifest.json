@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.d0579594.css",
-    "main.js": "/static/js/main.0fad9af6.js",
+    "main.css": "/static/css/main.da784983.css",
+    "main.js": "/static/js/main.a9ebce18.js",
     "static/js/787.e3835ec5.chunk.js": "/static/js/787.e3835ec5.chunk.js",
     "static/media/BlackGreen_mainpage.jpg": "/static/media/BlackGreen_mainpage.d58520ca02362c52c90a.jpg",
     "index.html": "/index.html",
-    "main.d0579594.css.map": "/static/css/main.d0579594.css.map",
-    "main.0fad9af6.js.map": "/static/js/main.0fad9af6.js.map",
+    "main.da784983.css.map": "/static/css/main.da784983.css.map",
+    "main.a9ebce18.js.map": "/static/js/main.a9ebce18.js.map",
     "787.e3835ec5.chunk.js.map": "/static/js/787.e3835ec5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d0579594.css",
-    "static/js/main.0fad9af6.js"
+    "static/css/main.da784983.css",
+    "static/js/main.a9ebce18.js"
   ]
 }
