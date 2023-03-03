@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import styles from "./MainPage.module.css";
 import AboutPage from "../AboutPage/AboutPage";
 import HomePage from "../HomePage/HomePage";
@@ -6,7 +6,9 @@ import ProjectPage from "../ProjectPage/ProjectPage";
 import ContactPage from "../ContactPage/ContactPage";
 
 function MainPage(props) {
-  const selected = (data) => {
+  const mainPageRef = useRef(null);
+
+  const selected = () => {
     setCurrentPage(projectPage);
   };
 
@@ -29,7 +31,11 @@ function MainPage(props) {
     }
   }, [props.selectedPage]);
 
-  return <div className={styles.main_page}>{currentPage}</div>;
+  return (
+    <div className={styles.main_page} ref={mainPageRef}>
+      {currentPage}
+    </div>
+  );
 }
 
 export default MainPage;
