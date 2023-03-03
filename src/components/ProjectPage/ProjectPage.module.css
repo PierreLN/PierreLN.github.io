@@ -14,16 +14,25 @@
   margin-bottom: 2%;
   padding: 2%;
   background-color: rgba(0, 0, 0, 0.5);
+  overflow: auto;
+  transition: all 0.2s ease-in-out;
+}
+
+.project_section:hover {
+    transform: scale(1.1);
 }
 
 .project_name {
   width: 15%;
   height: fit-content;
+  font-size: larger;
+  text-align: center;
 }
 
 .project_description {
   width: 50%;
   padding-left: 2%;
+  text-align: justify;
 }
 
 .project_image {
@@ -34,4 +43,5 @@
   background-position: center;
   background-color: black;
   border-radius: none;
+  text-align: justify;
 }
