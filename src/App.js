@@ -1,14 +1,15 @@
 import React, { Component } from "react";
 import { HashRouter, Route, Link, Routes } from "react-router-dom";
 import "./App.css";
-// import SideMenu from './components/SideMenu/SideMenu';
-// import MainPage from './components/MainPage/MainPage';
+import SideMenu from './components/SideMenu/SideMenu';
+import MainPage from './components/MainPage/MainPage';
 
 function App() {
   return (
     <HashRouter basename="/">
       <div>
-        helloooo
+        <SideMenu></SideMenu>
+        <MainPage></MainPage>
         <ul>
           <li>
             <Link to="/">Home</Link>
