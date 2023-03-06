@@ -14,6 +14,7 @@
     url("../../Image/Rice_mountain_mainpage.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size:auto;
+  overflow: hidden;
 }
 
