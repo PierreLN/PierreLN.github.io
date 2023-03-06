@@ -9,6 +9,7 @@
   border: none;
   border-bottom: none;
   transition: all 0.2s ease;
+  
 }
 
 .button:focus {
@@ -19,6 +20,7 @@
 .button:active {
   border-bottom: white 2px solid;
   transform: scale(1.2);
+  border-radius: 0%;
 }
 
 @media (min-width: 768px) {

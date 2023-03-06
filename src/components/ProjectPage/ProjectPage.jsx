@@ -41,7 +41,10 @@ function ProjectPage(props) {
         <Card className={styles.project_name}>Party Like No Tomorrow</Card>
         <div className={styles.project_image}></div>
 
-        <Card className={styles.project_description}>
+        <Card
+          className={styles.project_description}
+          style="background-image: url('../../Image/1_party.png')"
+        >
           2D platform game where you have to bring the player to an end point
           without coming into contact with enemies.
         </Card>
