@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.7138b336.css",
-    "main.js": "/static/js/main.6c988211.js",
+    "main.css": "/static/css/main.2f75f662.css",
+    "main.js": "/static/js/main.7d598a79.js",
     "static/js/787.e3835ec5.chunk.js": "/static/js/787.e3835ec5.chunk.js",
     "static/media/Rice_mountain_mainpage.jpg": "/static/media/Rice_mountain_mainpage.4bbaf2c15af6f6dea030.jpg",
     "static/media/profilImage.jpg": "/static/media/profilImage.fc40d09d1eb8fe6c55af.jpg",
+    "static/media/contact_me.jpg": "/static/media/contact_me.a927b1c45e7c53390a5f.jpg",
     "static/media/BlackGreen_mainpage.jpg": "/static/media/BlackGreen_mainpage.d58520ca02362c52c90a.jpg",
     "index.html": "/index.html",
-    "main.7138b336.css.map": "/static/css/main.7138b336.css.map",
-    "main.6c988211.js.map": "/static/js/main.6c988211.js.map",
+    "main.2f75f662.css.map": "/static/css/main.2f75f662.css.map",
+    "main.7d598a79.js.map": "/static/js/main.7d598a79.js.map",
     "787.e3835ec5.chunk.js.map": "/static/js/787.e3835ec5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7138b336.css",
-    "static/js/main.6c988211.js"
+    "static/css/main.2f75f662.css",
+    "static/js/main.7d598a79.js"
   ]
 }
