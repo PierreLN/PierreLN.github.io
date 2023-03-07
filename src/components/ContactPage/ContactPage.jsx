@@ -1,11 +1,11 @@
 import React, { useState, useRef } from "react";
 import styles from "./ContactPage.module.css";
 import Card from "../UI/Card";
-import Button from "../UI/Button";
 import ErrorModal from "../UI/ErrorModal";
+import axios from "axios";
 
 function ContactPage(props) {
-  let email = "pierre@g.com";
+  let email = "12345@gmail.com";
 
   const [isValid, setIsValid] = useState(false);
   const [error, setError] = useState(null);
@@ -31,6 +31,7 @@ function ContactPage(props) {
       setError({ title: "Invalid", messagebox: "Please enter a message" });
       return;
     }
+
     setIsValid(true);
 
     nameRef.current.value = "";
@@ -56,32 +57,41 @@ function ContactPage(props) {
       <Card className={styles.contact_me}>
         <div className={styles.contact_me_section}>
           <form
-            action="mailto:pierre@g.com"
             method="post"
+            encType="text/plain"
             className={styles.form_main_box}
             onSubmit={addEmailHandler}
           >
             <div className={styles.form_section}>
               <h1>Contact Me</h1>
-              <div className={styles.name}>Full Name</div>
+              <label className={styles.name} htmlFor="name">
+                Full Name
+              </label>
               <input
                 className={styles.name_input}
                 type="text"
                 name="name"
+                id="name"
                 ref={nameRef}
               ></input>
-              <div className={styles.email}>Email</div>
+              <label className={styles.email} htmlFor="email">
+                Email
+              </label>
               <input
                 className={styles.email_input}
                 ref={emailRef}
                 type="email"
                 name="email"
+                id="email"
               ></input>
-              <div className={styles.message}>Message</div>
+              <label className={styles.message} htmlFor="message">
+                Message
+              </label>
               <textarea
                 className={styles.message_input}
                 type="text"
                 name="message"
+                id="message"
                 placeholder="Any questions?"
                 ref={messageRef}
               ></textarea>
