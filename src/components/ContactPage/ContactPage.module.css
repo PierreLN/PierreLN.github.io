@@ -144,6 +144,25 @@ button:hover {
 }
 
 @media only screen and (max-width: 720px) {
+  .image {
+    min-width: 435px;
+    height: 280px;
+    margin: 1%;
+  }
+
+  .media {
+    font-size: medium;
+        display: inline-block;
+    justify-content: center;
+  }
+
+  .contact_me_section {
+    min-width: 420px;
+    
+  }
+}
+
+@media only screen and (max-width: 420px) {
   .contactPage {
     display: inline-block;
     justify-content: center;
@@ -155,6 +174,14 @@ button:hover {
     margin: 1%;
   }
 
+  .form_main_box {
+    max-width: 200px;
+  }
+
+  .info_section {
+    max-width: 180px;
+  }
+
   .media {
     font-size: medium;
   }
@@ -163,3 +190,4 @@ button:hover {
     min-width: 420px;
   }
 }
+

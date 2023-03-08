@@ -2,7 +2,6 @@ import React, { useState, useRef } from "react";
 import styles from "./ContactPage.module.css";
 import Card from "../UI/Card";
 import ErrorModal from "../UI/ErrorModal";
-import axios from "axios";
 
 function ContactPage(props) {
   let email = "12345@gmail.com";
@@ -57,10 +56,11 @@ function ContactPage(props) {
       <Card className={styles.contact_me}>
         <div className={styles.contact_me_section}>
           <form
+          action={`mailto:${email}`}
             method="post"
             encType="text/plain"
             className={styles.form_main_box}
-            onSubmit={addEmailHandler}
+            // onSubmit={addEmailHandler}
           >
             <div className={styles.form_section}>
               <h1>Contact Me</h1>
