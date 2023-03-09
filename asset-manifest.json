@@ -1,19 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.eeaaeab0.css",
-    "main.js": "/static/js/main.adac4f01.js",
+    "main.css": "/static/css/main.c679c540.css",
+    "main.js": "/static/js/main.f18598ed.js",
     "static/js/787.e3835ec5.chunk.js": "/static/js/787.e3835ec5.chunk.js",
+    "static/media/GreenListin.png": "/static/media/GreenListin.ce9529b2ce1768a7dc19.png",
     "static/media/Rice_mountain_mainpage.jpg": "/static/media/Rice_mountain_mainpage.4bbaf2c15af6f6dea030.jpg",
+    "static/media/97_cartes.jpg": "/static/media/97_cartes.6af13b0021d90605efed.jpg",
     "static/media/profilImage_2.jpg": "/static/media/profilImage_2.09dbec544d2de0b6599c.jpg",
+    "static/media/2_party.png": "/static/media/2_party.c2647fdf52bc126a9d95.png",
     "static/media/contact_me.jpg": "/static/media/contact_me.a927b1c45e7c53390a5f.jpg",
-    "static/media/BlackGreen_mainpage.jpg": "/static/media/BlackGreen_mainpage.d58520ca02362c52c90a.jpg",
+    "static/media/dalek.jpg": "/static/media/dalek.1d31a3fd2584adae152c.jpg",
+    "static/media/GoPiGo3_42.jpg": "/static/media/GoPiGo3_42.e336a81cbc48b57fb87f.jpg",
     "index.html": "/index.html",
-    "main.eeaaeab0.css.map": "/static/css/main.eeaaeab0.css.map",
-    "main.adac4f01.js.map": "/static/js/main.adac4f01.js.map",
+    "main.c679c540.css.map": "/static/css/main.c679c540.css.map",
+    "main.f18598ed.js.map": "/static/js/main.f18598ed.js.map",
     "787.e3835ec5.chunk.js.map": "/static/js/787.e3835ec5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eeaaeab0.css",
-    "static/js/main.adac4f01.js"
+    "static/css/main.c679c540.css",
+    "static/js/main.f18598ed.js"
   ]
 }
