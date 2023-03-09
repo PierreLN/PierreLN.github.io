@@ -7,7 +7,9 @@ function ProjectPage(props) {
     <div className={styles.project_page}>
       <div className={styles.project_section}>
         <Card className={styles.project_name}>GreenListin</Card>
-        <div className={styles.project_image}></div>
+        <div
+          className={`${styles.project_image} ${styles.imgGreenListin}`}
+        ></div>
         <Card className={styles.project_description}>
           Application suggesting lists of real grocery products according to
           their current price, their supplier and the variation of the market.
@@ -20,7 +22,9 @@ function ProjectPage(props) {
       </div>
       <div className={styles.project_section}>
         <Card className={styles.project_name}>GoPiGo3_42</Card>
-        <div className={styles.project_image}></div>
+        <div
+          className={`${styles.project_image} ${styles.imgGoPiGo3_42}`}
+        ></div>
 
         <Card className={styles.project_description}>
           Build a generic library that implements a State Machine design, a
@@ -30,7 +34,7 @@ function ProjectPage(props) {
       </div>
       <div className={styles.project_section}>
         <Card className={styles.project_name}>Dalek</Card>
-        <div className={styles.project_image}></div>
+        <div className={`${styles.project_image} ${styles.imgDalek}`}></div>
 
         <Card className={styles.project_description}>
           Turn based survival game on the terminal where you have to move the
@@ -39,7 +43,7 @@ function ProjectPage(props) {
       </div>
       <div className={styles.project_section}>
         <Card className={styles.project_name}>Party Like No Tomorrow</Card>
-        <div className={styles.project_image}></div>
+        <div className={`${styles.project_image} ${styles.imgPLNT}`}></div>
 
         <Card
           className={styles.project_description}
@@ -51,7 +55,7 @@ function ProjectPage(props) {
       </div>
       <div className={styles.project_section}>
         <Card className={styles.project_name}>Android 97 Cartes</Card>
-        <div className={styles.project_image}></div>
+        <div className={`${styles.project_image} ${styles.img97_Cartes}`}></div>
 
         <Card className={styles.project_description}>
           Card game on mobile where you have to empty the deck of cards by

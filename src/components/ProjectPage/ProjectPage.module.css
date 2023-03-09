@@ -2,28 +2,26 @@
   text-align: center;
   display: block;
   justify-content: space-between;
-  max-height: 700px;
-
+  min-height: 800px;
+  overflow: auto;
 }
 
 .project_section {
   width: 80%;
-  height: auto;
-  max-height: 100px;
+  height: 200px;
+  min-height: 100px;
   display: flex;
   justify-content: space-between;
-  box-shadow: 0px 15px 40px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 15px 40px 15px rgba(0, 0, 0, 0.2);
   border-radius: 2%;
   margin-left: 8%;
   margin-bottom: 2%;
   padding: 2%;
   background-color: rgba(0, 0, 0, 0.5);
-  overflow: auto;
-  transition: all 0.2s ease-in-out;
-}
+  overflow: visible;
+  margin-bottom: 100px;
+    margin-top: 100px;
 
-.project_section:hover {
-    transform: scale(1.1);
 }
 
 .project_name {
@@ -41,22 +39,50 @@
 
 .project_image {
   width: 35%;
-  background-image: url("../../Image/BlackGreen_mainpage.jpg");
+  border-radius: none;
+  text-align: justify;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: black;
-  border-radius: none;
-  text-align: justify;
+  overflow: visible;
+  transition: all 0.4s ease-in-out;
+}
+
+.project_image:hover {
+  transform: scale(2.3);
 }
 
 @media only screen and (max-width: 720px) {
-.project_image {
-  width:0;
+  .project_image {
+    width: 0;
+  }
+  .project_description {
+    width: 60%;
+    padding: 2%;
+    text-align: justify;
+  }
 }
-.project_description {
-  width: 60%;
-  padding: 2%;
-  text-align: justify;
+
+.project_page {
+  max-height: 300px;
 }
+
+.imgGreenListin {
+  background-image: url("../../Image/GreenListin.png");
+}
+
+.imgGoPiGo3_42 {
+  background-image: url("../../Image/GoPiGo3_42.jpg");
+}
+
+.imgDalek {
+  background-image: url("../../Image/dalek.jpg");
+}
+
+.imgPLNT {
+  background-image: url("../../Image/2_party.png");
+}
+
+.img97_Cartes {
+  background-image: url("../../Image/97_cartes.jpg");
 }
