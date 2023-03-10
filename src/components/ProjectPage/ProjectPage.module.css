@@ -36,6 +36,7 @@
   padding-left: 2%;
   text-align: justify;
   font-size: large;
+  overflow: auto;
 }
 
 .project_image {
