@@ -107,7 +107,7 @@ button:hover {
   margin: 1%;
   padding: 5%;
   transition: all 0.5s ease-in-out;
-  margin-top: 30%;
+  margin-top: 20%;
 }
 
 .contactPage_media:hover {
@@ -140,6 +140,10 @@ button:hover {
 
 .info_location_text {
   margin-top: 10%;
+}
+
+.socialPlace {
+  padding-top: 5px;
 }
 
 @media only screen and (max-width: 720px) {

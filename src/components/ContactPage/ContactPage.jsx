@@ -8,7 +8,7 @@ function ContactPage(props) {
 
   const [isValid, setIsValid] = useState(false);
   const [error, setError] = useState(null);
-  const [contactInfo, setContactInfo] = useState(email);
+  const [contactInfo, setContactInfo] = useState('---');
   const nameRef = useRef();
   const emailRef = useRef();
   const messageRef = useRef();
@@ -117,7 +117,7 @@ function ContactPage(props) {
                 <h2>Email</h2>
                 <div className={styles.info_email_text}>
                   {email}
-                  <div>{contactInfo}</div>
+                  <div className={styles.socialPlace}>{contactInfo}</div>
                 </div>
               </div>
 
