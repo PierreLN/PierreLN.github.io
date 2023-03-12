@@ -8,6 +8,7 @@ function ContactPage(props) {
 
   const [isValid, setIsValid] = useState(false);
   const [error, setError] = useState(null);
+  const [contactInfo, setContactInfo] = useState(email)
   const nameRef = useRef();
   const emailRef = useRef();
   const messageRef = useRef();
@@ -41,6 +42,18 @@ function ContactPage(props) {
   const errorHandler = () => {
     setError(null);
   };
+
+  const socialMediaHandler = (data) => {
+    if (data.target.innerHTML == "LinkedIn") {
+      setContactInfo('Github.com')
+    }
+    else if (data.target.innerHTML == "Github") {
+      setContactInfo('LinkedIn.com')
+    }
+    else {
+      setContactInfo(email)
+    }
+  }
 
   return (
     <div className={styles.contactPage}>
@@ -106,7 +119,7 @@ function ContactPage(props) {
             <div className={styles.info}>
               <div className={styles.info_email}>
                 <h2>Email</h2>
-                <div className={styles.info_email_text}>{email}</div>
+                <div className={styles.info_email_text}>{contactInfo}</div>
               </div>
 
               <div className={styles.info_location}>
@@ -117,7 +130,7 @@ function ContactPage(props) {
                 </div>
               </div>
             </div>
-            <div className={styles.media}>
+            <div className={styles.media} onClick={socialMediaHandler}>
               <Card className={styles.contactPage_media}>LinkedIn</Card>
               <Card className={styles.contactPage_media}>Github</Card>
             </div>
