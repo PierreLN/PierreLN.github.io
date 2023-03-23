@@ -8,6 +8,7 @@ function ContactPage(props) {
 
   const [isValid, setIsValid] = useState(false);
   const [error, setError] = useState(null);
+  const [contactInfo, setContactInfo] = useState('---');
   const nameRef = useRef();
   const emailRef = useRef();
   const messageRef = useRef();
@@ -42,6 +43,14 @@ function ContactPage(props) {
     setError(null);
   };
 
+  const socialMediaHandler = (data) => {
+    if (data.target.innerHTML == "LinkedIn") {
+      setContactInfo("https://linkedin.com");
+    } else if (data.target.innerHTML == "Github") {
+      setContactInfo("https://github.com/");
+    }
+  };
+
   return (
     <div className={styles.contactPage}>
       {error && (
@@ -56,7 +65,7 @@ function ContactPage(props) {
       <Card className={styles.contact_me}>
         <div className={styles.contact_me_section}>
           <form
-          action={`mailto:${email}`}
+            action={`mailto:${email}`}
             method="post"
             encType="text/plain"
             className={styles.form_main_box}
@@ -106,7 +115,10 @@ function ContactPage(props) {
             <div className={styles.info}>
               <div className={styles.info_email}>
                 <h2>Email</h2>
-                <div className={styles.info_email_text}>{email}</div>
+                <div className={styles.info_email_text}>
+                  {email}
+                  <div className={styles.socialPlace}>{contactInfo}</div>
+                </div>
               </div>
 
               <div className={styles.info_location}>
@@ -117,7 +129,7 @@ function ContactPage(props) {
                 </div>
               </div>
             </div>
-            <div className={styles.media}>
+            <div className={styles.media} onClick={socialMediaHandler}>
               <Card className={styles.contactPage_media}>LinkedIn</Card>
               <Card className={styles.contactPage_media}>Github</Card>
             </div>
