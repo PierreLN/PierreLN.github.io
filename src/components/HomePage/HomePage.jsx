@@ -14,7 +14,7 @@ function HomePage(props) {
     <div className={styles.homepage}>
       <Card className={styles.homepage_section}>
         <div className={styles.welcome}>
-          Welcome to my corner!
+          Welcome to my porfolio website made with React!
           <p className={styles.name}>
             {signstart} I'm Pierre {signEnd}
           </p>
