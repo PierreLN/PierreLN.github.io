@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ff05e588.css",
-    "main.js": "/static/js/main.2e79e98f.js",
+    "main.css": "/static/css/main.0f1ab793.css",
+    "main.js": "/static/js/main.2f3b5668.js",
     "static/js/787.e3835ec5.chunk.js": "/static/js/787.e3835ec5.chunk.js",
     "static/media/GreenListin.png": "/static/media/GreenListin.ce9529b2ce1768a7dc19.png",
     "static/media/Rice_mountain_mainpage.jpg": "/static/media/Rice_mountain_mainpage.4bbaf2c15af6f6dea030.jpg",
@@ -12,12 +12,12 @@
     "static/media/dalek.jpg": "/static/media/dalek.1d31a3fd2584adae152c.jpg",
     "static/media/GoPiGo3_42.jpg": "/static/media/GoPiGo3_42.e336a81cbc48b57fb87f.jpg",
     "index.html": "/index.html",
-    "main.ff05e588.css.map": "/static/css/main.ff05e588.css.map",
-    "main.2e79e98f.js.map": "/static/js/main.2e79e98f.js.map",
+    "main.0f1ab793.css.map": "/static/css/main.0f1ab793.css.map",
+    "main.2f3b5668.js.map": "/static/js/main.2f3b5668.js.map",
     "787.e3835ec5.chunk.js.map": "/static/js/787.e3835ec5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff05e588.css",
-    "static/js/main.2e79e98f.js"
+    "static/css/main.0f1ab793.css",
+    "static/js/main.2f3b5668.js"
   ]
 }
