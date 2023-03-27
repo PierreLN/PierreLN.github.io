@@ -1,53 +1,26 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef} from "react";
 import styles from "./ContactPage.module.css";
 import Card from "../UI/Card";
 import ErrorModal from "../UI/ErrorModal";
 
 function ContactPage(props) {
-  let email = "12345@gmail.com";
+  let email = "pierrelongnguyen@gmail.com";
 
-  const [isValid, setIsValid] = useState(false);
   const [error, setError] = useState(null);
-  const [contactInfo, setContactInfo] = useState('---');
   const nameRef = useRef();
   const emailRef = useRef();
   const messageRef = useRef();
 
-  const addEmailHandler = (event) => {
-    event.preventDefault();
-    const enteredEmail = emailRef.current.value;
-    const enteredName = nameRef.current.value;
-    const enteredMessage = messageRef.current.value;
-
-    if (enteredName.length === 0) {
-      setError({ title: "Invalid", messagebox: "Please enter valid name" });
-      return;
-    }
-    if (enteredEmail.length === 0 || !enteredEmail.includes("@")) {
-      setError({ title: "Invalid", messagebox: "Please enter valid email" });
-      return;
-    }
-    if (enteredMessage.length === 0) {
-      setError({ title: "Invalid", messagebox: "Please enter a message" });
-      return;
-    }
-
-    setIsValid(true);
-
-    nameRef.current.value = "";
-    emailRef.current.value = "";
-    messageRef.current.value = "";
-  };
 
   const errorHandler = () => {
     setError(null);
   };
 
   const socialMediaHandler = (data) => {
-    if (data.target.innerHTML == "LinkedIn") {
-      setContactInfo("https://linkedin.com");
-    } else if (data.target.innerHTML == "Github") {
-      setContactInfo("https://github.com/");
+    if (data.target.innerHTML === "LinkedIn") {
+      window.location.href = ("https://www.linkedin.com/in/pierreln/");
+    } else if (data.target.innerHTML === "Github") {
+      window.location.href = ("https://github.com/PierreLN");
     }
   };
 
@@ -69,7 +42,6 @@ function ContactPage(props) {
             method="post"
             encType="text/plain"
             className={styles.form_main_box}
-            // onSubmit={addEmailHandler}
           >
             <div className={styles.form_section}>
               <h1>Contact Me</h1>
@@ -117,7 +89,6 @@ function ContactPage(props) {
                 <h2>Email</h2>
                 <div className={styles.info_email_text}>
                   {email}
-                  <div className={styles.socialPlace}>{contactInfo}</div>
                 </div>
               </div>
 
