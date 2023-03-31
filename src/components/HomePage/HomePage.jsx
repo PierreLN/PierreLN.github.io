@@ -3,7 +3,7 @@ import styles from "./HomePage.module.css";
 import Card from "../UI/Card";
 
 function HomePage(props) {
-  const signEnd = "/>";
+  const signEnd = ">";
   const signstart = "<";
 
   const onClickHandler = () => {
@@ -17,7 +17,7 @@ function HomePage(props) {
           Welcome to my porfolio website!
           <p>...made with React</p>
           <p className={styles.name}>
-            {signstart}πr{signstart} I'm Pierre {signstart}πr{signEnd}
+            {signstart}πr{signEnd} I'm Pierre {signstart}/πr{signEnd}
           </p>
         </div>
         <div className={styles.presentation} onClick={onClickHandler}>
