@@ -17,7 +17,7 @@ function HomePage(props) {
           Welcome to my porfolio website!
           <p>...made with React</p>
           <p className={styles.name}>
-            {signstart}πr{signEnd} I'm Pierre {signstart}πr{signEnd}
+            {signstart}πr{signstart} I'm Pierre {signstart}πr{signEnd}
           </p>
         </div>
         <div className={styles.presentation} onClick={onClickHandler}>
