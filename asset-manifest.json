@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.db96c49d.css",
-    "main.js": "/static/js/main.d3e46a79.js",
+    "main.js": "/static/js/main.fe20c078.js",
     "static/js/787.e3835ec5.chunk.js": "/static/js/787.e3835ec5.chunk.js",
     "static/media/Rice_mountain_mainpage.jpg": "/static/media/Rice_mountain_mainpage.4bbaf2c15af6f6dea030.jpg",
     "static/media/97_cartes.jpg": "/static/media/97_cartes.6af13b0021d90605efed.jpg",
@@ -13,11 +13,11 @@
     "static/media/GoPiGo3_42.jpg": "/static/media/GoPiGo3_42.e336a81cbc48b57fb87f.jpg",
     "index.html": "/index.html",
     "main.db96c49d.css.map": "/static/css/main.db96c49d.css.map",
-    "main.d3e46a79.js.map": "/static/js/main.d3e46a79.js.map",
+    "main.fe20c078.js.map": "/static/js/main.fe20c078.js.map",
     "787.e3835ec5.chunk.js.map": "/static/js/787.e3835ec5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.db96c49d.css",
-    "static/js/main.d3e46a79.js"
+    "static/js/main.fe20c078.js"
   ]
 }
