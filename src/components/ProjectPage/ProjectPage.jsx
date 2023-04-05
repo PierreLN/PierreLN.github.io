@@ -18,6 +18,7 @@ function ProjectPage(props) {
           available offering the possibility of displaying the search elements
           as well as the creation of a user account. An auto search feature is
           integrated through a ternary search tree data structure.
+          <p>== Python - HTML/CSS - Javascript ==</p>
         </Card>
       </div>
       <div className={styles.project_section}>
@@ -30,6 +31,7 @@ function ProjectPage(props) {
           Build a generic library that implements a State Machine design, a
           software framework. The library is integrated into application tasks
           for a GoPiGo3 robot.
+          <p>== Python ==</p>
         </Card>
       </div>
       <div className={styles.project_section}>
@@ -39,6 +41,7 @@ function ProjectPage(props) {
         <Card className={styles.project_description}>
           Turn based survival game on the terminal where you have to move the
           player to avoid colliding with enemies.
+          <p>== Python ==</p>
         </Card>
       </div>
       <div className={styles.project_section}>
@@ -51,6 +54,7 @@ function ProjectPage(props) {
         >
           2D platform game where you have to bring the player to an end point
           without coming into contact with enemies.
+          <p>== C# ==</p>
         </Card>
       </div>
       <div className={styles.project_section}>
@@ -60,6 +64,7 @@ function ProjectPage(props) {
         <Card className={styles.project_description}>
           Card game on mobile where you have to empty the deck of cards by
           placing them on the game table in ascending and descending order.
+          <p>== Java ==</p>
         </Card>
       </div>
     </div>
