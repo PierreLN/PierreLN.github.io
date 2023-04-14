@@ -1,0 +1,21 @@
+.container {
+  height: 30px;
+  width: 99px;
+  background-color: red;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.filler {
+  height: 100%;
+  width: 0%;
+  background-color: green;
+  text-align: center;
+  transition: width 1s ease-in-out;
+}
+
+.label {
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}

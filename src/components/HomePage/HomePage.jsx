@@ -1,13 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./HomePage.module.css";
 import Card from "../UI/Card";
+import ProgressBar from "../UI/ProgressBar";
+
 
 function HomePage(props) {
   const signEnd = ">";
   const signstart = "<";
+  let [counter, setCounter] = useState(0);
 
   const onClickHandler = () => {
-    props.onClick("project");
+    if (counter >= 99) {
+      props.onClick("project");
+    }
+    else {
+      setCounter(counter + 33);
+    }
   };
 
   return (
@@ -22,6 +30,7 @@ function HomePage(props) {
         <div className={styles.presentation} onClick={onClickHandler}>
           <p className={styles.title}>Full stack developer</p>
           <p className={styles.porfolio}>Porfolio</p>
+          <ProgressBar completion={counter}></ProgressBar>
         </div>
       </Card>
     </div>
