@@ -63,6 +63,22 @@
     padding: 2%;
     text-align: justify;
   }
+
+  .project_name {
+    width: 15%;
+    height: fit-content;
+    font-size: small;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .project_description {
+    width: 50%;
+    padding-left: 2%;
+    text-align: justify;
+    font-size: small;
+    overflow: auto;
+  }
 }
 
 .project_page {
