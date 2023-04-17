@@ -9,7 +9,10 @@
   width: 30%;
   height: 600px;
   margin-left: 2%;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.4)),
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(0, 0, 0, 0.4)
+    ),
     url("../../Image/contact_me.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -155,13 +158,12 @@ button:hover {
 
   .media {
     font-size: medium;
-        display: inline-block;
+    display: inline-block;
     justify-content: center;
   }
 
   .contact_me_section {
     min-width: 420px;
-    
   }
 }
 
@@ -192,5 +194,17 @@ button:hover {
   .contact_me_section {
     min-width: 420px;
   }
-}
 
+  .info_email_text {
+    font-size: x-small;
+  }
+  
+  .contactPage_media {
+    display: inline-block;
+    justify-content: center;
+  }
+
+  .image {
+    margin-top: 20%;
+  }
+}
