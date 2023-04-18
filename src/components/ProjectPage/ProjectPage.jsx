@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./ProjectPage.module.css";
-import Card from '../UI/Card'
+import Card from "../UI/Card";
 
 function ProjectPage(props) {
   return (
@@ -65,6 +65,19 @@ function ProjectPage(props) {
           Card game on mobile where you have to empty the deck of cards by
           placing them on the game table in ascending and descending order.
           <p>== Java ==</p>
+        </Card>
+      </div>
+      <div className={styles.project_section}>
+        <Card className={styles.project_name}>
+          CRM - Customer Relationship Management
+        </Card>
+        <div className={`${styles.project_image} ${styles.imgCRM}`}></div>
+        <Card className={styles.project_description}>
+          A CRM (Customer Relationship Management) app built with Django
+          web application that enables businesses to manage customer
+          interactions, track sales and marketing efforts, and streamline
+          customer communication.
+          <p>== Python ==</p>
         </Card>
       </div>
     </div>
