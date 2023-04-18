@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9c6b027a.css",
-    "main.js": "/static/js/main.a512773a.js",
+    "main.css": "/static/css/main.9d363116.css",
+    "main.js": "/static/js/main.fe7d3dd2.js",
     "static/js/787.e3835ec5.chunk.js": "/static/js/787.e3835ec5.chunk.js",
     "static/media/Rice_mountain_mainpage.jpg": "/static/media/Rice_mountain_mainpage.4bbaf2c15af6f6dea030.jpg",
     "static/media/97_cartes.jpg": "/static/media/97_cartes.6af13b0021d90605efed.jpg",
@@ -10,15 +10,16 @@
     "static/media/contact_me.jpg": "/static/media/contact_me.a927b1c45e7c53390a5f.jpg",
     "static/media/GreenListin1.png": "/static/media/GreenListin1.f5c4be0fcf4adc84e53a.png",
     "static/media/dalek.jpg": "/static/media/dalek.1d31a3fd2584adae152c.jpg",
+    "static/media/Shoppies.png": "/static/media/Shoppies.c3487d2c5a655058533d.png",
     "static/media/GoPiGo3_42.jpg": "/static/media/GoPiGo3_42.e336a81cbc48b57fb87f.jpg",
     "static/media/CRM_customer_relationship_management.png": "/static/media/CRM_customer_relationship_management.235ae44d3413244f7a85.png",
     "index.html": "/index.html",
-    "main.9c6b027a.css.map": "/static/css/main.9c6b027a.css.map",
-    "main.a512773a.js.map": "/static/js/main.a512773a.js.map",
+    "main.9d363116.css.map": "/static/css/main.9d363116.css.map",
+    "main.fe7d3dd2.js.map": "/static/js/main.fe7d3dd2.js.map",
     "787.e3835ec5.chunk.js.map": "/static/js/787.e3835ec5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9c6b027a.css",
-    "static/js/main.a512773a.js"
+    "static/css/main.9d363116.css",
+    "static/js/main.fe7d3dd2.js"
   ]
 }
