@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.cfe5b7c1.css",
+    "main.css": "/static/css/main.66051354.css",
     "main.js": "/static/js/main.473daaf6.js",
     "static/js/787.e3835ec5.chunk.js": "/static/js/787.e3835ec5.chunk.js",
     "static/media/Rice_mountain_mainpage.jpg": "/static/media/Rice_mountain_mainpage.4bbaf2c15af6f6dea030.jpg",
@@ -12,12 +12,12 @@
     "static/media/dalek.jpg": "/static/media/dalek.1d31a3fd2584adae152c.jpg",
     "static/media/GoPiGo3_42.jpg": "/static/media/GoPiGo3_42.e336a81cbc48b57fb87f.jpg",
     "index.html": "/index.html",
-    "main.cfe5b7c1.css.map": "/static/css/main.cfe5b7c1.css.map",
+    "main.66051354.css.map": "/static/css/main.66051354.css.map",
     "main.473daaf6.js.map": "/static/js/main.473daaf6.js.map",
     "787.e3835ec5.chunk.js.map": "/static/js/787.e3835ec5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cfe5b7c1.css",
+    "static/css/main.66051354.css",
     "static/js/main.473daaf6.js"
   ]
 }
