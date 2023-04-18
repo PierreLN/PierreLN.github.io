@@ -35,6 +35,16 @@
 @media only screen and (max-width: 420px) {
   .welcome {
     margin-top: 20%;
+    font-size: larger;
+  }
+  .name {
+    font-size: small;
+  }
+  .presentation {
+    font-size: small;
   }
 
+  .porfolio {
+    font-size: small;
+  }
 }

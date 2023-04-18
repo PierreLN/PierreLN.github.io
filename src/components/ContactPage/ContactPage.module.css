@@ -196,15 +196,16 @@ button:hover {
   }
 
   .info_email_text {
-    font-size: x-small;
+    font-size: xx-small;
   }
-  
+
   .contactPage_media {
     display: inline-block;
     justify-content: center;
   }
 
   .image {
-    margin-top: 20%;
+    margin-top: 25%;
+    margin-right: 0%;;
   }
 }

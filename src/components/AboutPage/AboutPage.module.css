@@ -64,6 +64,7 @@
     width: 200px;
     height: 200px;
     margin-left: 35%;
+    margin-top: 20%;
   }
   .description {
     max-height: 500px;
@@ -84,8 +85,11 @@
     width: 200px;
     height: 200px;
     margin-left: 35%;
+    margin-top: 25%;
   }
   .description {
     max-height: 500px;
+    font-size: smaller;
   }
+
 }
