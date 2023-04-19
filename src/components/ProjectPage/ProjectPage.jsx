@@ -22,15 +22,13 @@ function ProjectPage(props) {
         </Card>
       </div>
       <div className={styles.project_section}>
-        <Card className={styles.project_name}>
-          CRM - Customer Relationship Management
-        </Card>
+        <Card className={styles.project_name}>CRM</Card>
         <div className={`${styles.project_image} ${styles.imgCRM}`}></div>
         <Card className={styles.project_description}>
-          A CRM (Customer Relationship Management) app built with Django
-          web application that enables businesses to manage customer
-          interactions, track sales and marketing efforts, and streamline
-          customer communication.
+          A CRM (Customer Relationship Management) app built with Django web
+          application that enables businesses to manage customer interactions,
+          track sales and marketing efforts, and streamline customer
+          communication.
           <p>== Python ==</p>
         </Card>
       </div>
@@ -52,7 +50,9 @@ function ProjectPage(props) {
         <div className={`${styles.project_image} ${styles.imgShoppies}`}></div>
 
         <Card className={styles.project_description}>
-        App to help manage movies nominations for the upcoming Shoppies. Search results comes from OMDB's API (free API key: http://www.omdbapi.com/apikey.aspx).
+          App to help manage movies nominations for the upcoming Shoppies.
+          Search results comes from OMDB's API (free API key:
+          http://www.omdbapi.com/apikey.aspx).
           <p>== HTML/CSS - Javascript - React ==</p>
         </Card>
       </div>
@@ -60,8 +60,7 @@ function ProjectPage(props) {
         <Card className={styles.project_name}>Party Like No Tomorrow</Card>
         <div className={`${styles.project_image} ${styles.imgPLNT}`}></div>
 
-        <Card
-          className={styles.project_description}>
+        <Card className={styles.project_description}>
           2D platform game where you have to bring the player to an end point
           without coming into contact with enemies.
           <p>== C# - Unity ==</p>
