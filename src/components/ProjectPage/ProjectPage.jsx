@@ -50,8 +50,8 @@ function ProjectPage(props) {
         <div className={`${styles.project_image} ${styles.imgShoppies}`}></div>
 
         <Card className={styles.project_description}>
-          App to help manage movies nominations for the upcoming Shoppies.
-          Search results comes from OMDB's API (free API key:
+          App to help manage movie nominations for the upcoming Shoppies.
+          Search results come from OMDB's API (free API key:
           http://www.omdbapi.com/apikey.aspx).
           <p>== HTML/CSS - Javascript - React ==</p>
         </Card>
