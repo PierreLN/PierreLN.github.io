@@ -50,8 +50,8 @@ function ProjectPage(props) {
         <div className={`${styles.project_image} ${styles.imgShoppies}`}></div>
 
         <Card className={styles.project_description}>
-          App to help manage movie nominations for the upcoming Shoppies.
-          Search results come from OMDB's API (free API key:
+          App to help manage movie nominations for the upcoming Shoppies. Search
+          results come from OMDB's API (free API key:
           http://www.omdbapi.com/apikey.aspx).
           <p>== HTML/CSS - Javascript - React ==</p>
         </Card>
@@ -83,6 +83,18 @@ function ProjectPage(props) {
         <Card className={styles.project_description}>
           Card game on mobile where you have to empty the deck of cards by
           placing them on the game table in ascending and descending order.
+          <p>== Java ==</p>
+        </Card>
+      </div>
+      <div className={styles.project_section}>
+        <Card className={styles.project_name}>Parking Meter</Card>
+        <div
+          className={`${styles.project_image} ${styles.imgParkingMeter}`}
+        ></div>
+
+        <Card className={styles.project_description}>
+          Simulation of a parking meter with downtown Montreal time restriction
+          and pricing.
           <p>== Java ==</p>
         </Card>
       </div>
