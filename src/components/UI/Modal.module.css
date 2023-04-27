@@ -4,20 +4,20 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  z-index: 20;
-  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.80);
 }
 
 .modal {
   position: fixed;
-  top: 20vh;
+  top: -10%;
   left: 5%;
-  width: 90%;
+  width: 80%;
   background-color: white;
   padding: 1rem;
   border-radius: 14px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-  z-index: 30;
+  box-shadow: 15px 14px 33px rgba(255, 255, 255, 0.642);
+  z-index: 2;
   animation: slide-down 1s ease-out forwards;
 }
 
@@ -31,10 +31,22 @@
   color: rgba(255, 255, 255);
 }
 
+.image_section {
+    height: 100%;
+    max-height: 800px;
+}
+
+.image {
+    width: 100%;
+    height: 50%;
+    max-height: 700px;
+
+}
+
 @media (min-width: 768px) {
   .modal {
-    width: 40rem;
-    left: calc(50% - 20rem);
+    width: 50%;
+    left: 25%;
   }
 }
 

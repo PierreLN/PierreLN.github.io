@@ -5,14 +5,9 @@ import Modal from "../UI/Modal";
 
 const ProjectItem = (props) => {
   const [projectSelected, setProjectSelected] = useState(false);
-  const [selectedProject, setSelectedProject] = useState("");
-  const [imageSelected, setImageSelected] = useState("");
-  const [messageSelected, setMessageSelected] = useState("");
 
-  const imageSelectHandler = (event) => {
+  const projectSelectHandler = (event) => {
     setProjectSelected(true);
-    setSelectedProject(event.currentTarget.children[0].innerText);
-    setMessageSelected(event.currentTarget.children[2].innerText);
   };
 
   const modalOff = (event) => {
@@ -23,14 +18,19 @@ const ProjectItem = (props) => {
     <Fragment>
       {projectSelected && (
         <Modal
-          title={selectedProject}
-          message={messageSelected}
+          title={props.title}
+          message={props.description}
+          image={props.image}
           onConfirm={modalOff}
         ></Modal>
       )}
-      <div className={styles.project_section} onClick={imageSelectHandler}>
+      <div className={styles.project_section} onClick={projectSelectHandler}>
         <h3 className={styles.project_name}>{props.title}</h3>
-        <img src={props.image} alt={props.title} className={styles.project_image}/>
+        <img
+          src={props.image}
+          alt={props.title}
+          className={styles.project_image}
+        />
         <Card className={styles.project_description}>{props.description}</Card>
       </div>
     </Fragment>

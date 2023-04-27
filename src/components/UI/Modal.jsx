@@ -3,7 +3,6 @@ import Card from "./Card";
 import ReactDOM from "react-dom";
 import styles from "./Modal.module.css";
 
-
 const Backdrop = (props) => {
   return <div className={styles.backdrop} onClick={props.onConfirm}></div>;
 };
@@ -15,6 +14,9 @@ const Overlay = (props) => {
         <h2>{props.title}</h2>
       </header>
       <div>
+        <div className={styles.image_section}>
+          <img className={styles.image} src={props.image} alt={props.image} />
+        </div>
         <p>{props.message}</p>
       </div>
     </Card>
@@ -31,9 +33,11 @@ const Modal = (props) => {
       {ReactDOM.createPortal(
         <Overlay
           title={props.title}
+          image={props.image}
           message={props.message}
           onConfirm={props.onConfirm}
-        ></Overlay>, document.getElementById('overlay-root')
+        ></Overlay>,
+        document.getElementById("overlay-root")
       )}
     </Fragment>
   );
