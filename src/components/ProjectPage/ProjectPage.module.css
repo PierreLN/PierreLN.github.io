@@ -48,11 +48,11 @@
   background-repeat: no-repeat;
   background-position: center;
   overflow: visible;
-  transition: all 0.4s ease-in-out;
+  transition: all 1.5s ease-in-out;
 }
 
 .project_image:hover {
-  transform: scale(2);
+  transform: scale(1.1);
 }
 
 @media only screen and (max-width: 1650px) {
