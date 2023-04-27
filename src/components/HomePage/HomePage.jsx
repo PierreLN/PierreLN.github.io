@@ -3,17 +3,17 @@ import styles from "./HomePage.module.css";
 import Card from "../UI/Card";
 import ProgressBar from "../UI/ProgressBar";
 
-
 function HomePage(props) {
   const signEnd = ">";
   const signstart = "<";
+  const barStart = "{";
+  const barEnd = "}";
   let [counter, setCounter] = useState(0);
 
   const onClickHandler = () => {
     if (counter >= 99) {
       props.onClick("project");
-    }
-    else {
+    } else {
       setCounter(counter + 33);
     }
   };
@@ -23,8 +23,9 @@ function HomePage(props) {
       <Card className={styles.homepage_section}>
         <div className={styles.welcome}>
           Welcome to my porfolio website!
-          <p className={styles.name} >
-            {signstart}πr frameworkType='React'{signEnd} I'm Pierre {signstart}/πr{signEnd}
+          <p className={styles.name}>
+            {signstart}πr framework={barStart}props.react{barEnd}
+            {signEnd} I'm Pierre {signstart}/πr{signEnd}
           </p>
         </div>
         <div className={styles.presentation} onClick={onClickHandler}>
