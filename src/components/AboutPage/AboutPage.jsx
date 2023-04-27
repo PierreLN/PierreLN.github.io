@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "../UI/Button";
 import Card from "../UI/Card";
-import profilImage from "../../Image/profilImage_2.jpg";
+import profilImage from "../../Images/profilImage_2.jpg";
 import styles from "./AboutPage.module.css";
 
 function AboutPage(props) {

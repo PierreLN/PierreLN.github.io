@@ -1,0 +1,82 @@
+.project_section {
+    width: 80%;
+    height: 200px;
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 15px 40px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 2%;
+    margin-left: 8%;
+    margin-bottom: 2%;
+    padding: 2%;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: visible;
+    margin-bottom: 100px;
+    margin-top: 100px;
+  }
+  
+.project_name {
+    width: 15%;
+    padding-top: 4%;
+    height: fit-content;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .project_description {
+    width: 50%;
+    padding-left: 2%;
+    text-align: justify;
+    font-size: large;
+    overflow: auto;
+  }
+  
+  .project_image {
+    width: 35%;
+    border-radius: none;
+    text-align: justify;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: visible;
+    transition: all 1.5s ease-in-out;
+  }
+  
+  .project_image:hover {
+    transform: scale(1.1);
+  }
+  
+  @media only screen and (max-width: 1650px) {
+    .project_name {
+      font-size: large;
+      padding-top: 4%;
+    }
+  }
+  
+  @media only screen and (max-width: 720px) {
+    .project_image {
+      width: 0;
+    }
+    .project_description {
+      width: 60%;
+      padding: 2%;
+      text-align: justify;
+    }
+  
+    .project_name {
+      width: 15%;
+      height: fit-content;
+      font-size: small;
+      font-weight: bold;
+      text-align: center;
+    }
+  
+    .project_description {
+      width: 50%;
+      padding-left: 2%;
+      text-align: justify;
+      font-size: small;
+      overflow: auto;
+    }
+  }
