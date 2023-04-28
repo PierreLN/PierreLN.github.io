@@ -24,7 +24,15 @@ function HomePage(props) {
         <div className={styles.welcome}>
           Welcome to my porfolio website!
           <p className={styles.name}>
-            {signstart}πr framework={barStart}props.react{barEnd}
+            {signstart}πr framework={barStart}props.
+            <div className={styles.reactAnimation}>
+              <div className={styles['react-r']}>r</div>
+              <div className={styles['react-e']}>e</div>
+              <div className={styles['react-a']}>a</div>
+              <div className={styles['react-c']}>c</div>
+              <div className={styles['react-t']}>t</div>
+            </div>
+            {barEnd}
             {signEnd} I'm Pierre {signstart}/πr{signEnd}
           </p>
         </div>

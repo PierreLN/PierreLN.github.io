@@ -36,6 +36,47 @@
 
 .name {
   font-size: 30px;
+  display: flex;
+}
+
+.reactAnimation {
+  display: flex;
+}
+
+.react-r {
+  animation: wave-up 3s ease-in-out infinite;
+}
+.react-e {
+  animation: wave-up 3s ease-in-out infinite;
+  animation-delay: 0.2s;
+}
+.react-a {
+  animation: wave-up 3s ease-in-out infinite;
+  animation-delay: 0.4s;
+}
+.react-c {
+  animation: wave-up 3s ease-in-out infinite;
+  animation-delay: 0.6s;
+}
+.react-t {
+  animation: wave-up 3s ease-in-out infinite;
+  animation-delay: 0.8s;
+}
+
+@keyframes wave-up {
+  0% {
+    transform: translateY(0px);
+  }
+  45% {
+    color: green;
+    transform: translateY(-5px);
+  }
+  55% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 .porfolio {
