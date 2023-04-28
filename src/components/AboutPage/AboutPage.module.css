@@ -4,6 +4,7 @@
   text-align: center;
   display: flex;
   justify-content: space-between;
+  animation: pop 1s ease-out;
 }
 
 .image {
@@ -29,6 +30,18 @@
   width: 50%;
   box-shadow: 0px 15px 40px 15px rgba(0, 0, 0, 0.5);
   overflow: auto;
+  animation: pop 1.5s ease-out;
+}
+
+@keyframes pop {
+  from {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0rem);
+  }
 }
 
 .title {
@@ -71,7 +84,6 @@
   }
 }
 
-
 @media only screen and (max-width: 420px) {
   .about_page {
     margin-left: 320px;
@@ -91,5 +103,4 @@
     max-height: 500px;
     font-size: smaller;
   }
-
 }

@@ -24,10 +24,10 @@ function SideMenu(props) {
           <Button onClick={homePageHandler}>HOME</Button>
         </li>
         <li>
-          <Button onClick={aboutPageHandler}>ABOUT</Button>
+          <Button onClick={ProjectPageHandler}>PROJECTS</Button>
         </li>
         <li>
-          <Button onClick={ProjectPageHandler}>PROJECTS</Button>
+          <Button onClick={aboutPageHandler}>ABOUT</Button>
         </li>
         <li>
           <Button onClick={ContactPageHandler}>CONTACT</Button>

@@ -2,6 +2,16 @@
   font-family: "Segoe UI", sans-serif;
   line-height: 1.5;
   margin-top: -150px;
+  animation: pop 0.25s ease-in-out;
+}
+
+@keyframes pop {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .presentation {

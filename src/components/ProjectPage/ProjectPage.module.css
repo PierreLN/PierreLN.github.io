@@ -5,7 +5,19 @@
   min-height: 800px;
   overflow: auto;
   max-height: 300px;  
+  animation: pop 0.5s ease-in-out;
 }
+
+
+@keyframes pop {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 
 
 

@@ -3,6 +3,18 @@
   height: auto;
   display: flex;
   justify-content: space-around;
+  animation: pop 1s ease-in-out;
+}
+
+@keyframes pop {
+  from {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0rem);
+  }
 }
 
 .image {
@@ -25,6 +37,8 @@
   width: 60%;
   height: fit-content;
   text-align: center;
+  animation: pop 1.5s ease-in-out;
+
 }
 
 .contact_me_section {

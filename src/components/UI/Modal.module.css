@@ -18,7 +18,7 @@
   border-radius: 14px;
   box-shadow: 15px 14px 33px rgba(255, 255, 255, 0.642);
   z-index: 2;
-  animation: slide-down 1s ease-out forwards;
+  animation: slide-up 1s ease-out forwards;
 }
 
 .header {
@@ -50,13 +50,13 @@
   }
 }
 
-@keyframes slide-down {
+@keyframes slide-up {
   from {
     opacity: 0;
-    transform: translateY(0rem);
+    transform: translateY(50rem);
   }
   to {
     opacity: 1;
-    transform: translateY(10rem);
+    transform: translateY(15rem);
   }
 }
