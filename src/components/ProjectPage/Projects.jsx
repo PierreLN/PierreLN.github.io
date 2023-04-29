@@ -20,6 +20,13 @@ const Projects = (props) => {
       language: "== HTML/CSS - Javascript - React ==",
     },
     {
+      title: "Food Order",
+      description:
+        "A food web-based application. Users can place orders and pay for them directly through the app.",
+      image: require("../../Images/Food_Order.png"),
+      language: "== HTML/CSS - Javascript - React ==",
+    },
+    {
       title: "GoPiGo3_42",
       description:
         "Build a generic library that implements a State Machine design, software framework. The library is integrated into application tasks for a GoPiGo3 robot.",

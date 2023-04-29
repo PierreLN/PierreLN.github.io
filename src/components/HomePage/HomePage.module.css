@@ -43,24 +43,28 @@
   display: flex;
 }
 
-.react-r {
+.animated {
   animation: wave-up 3s ease-in-out infinite;
 }
-.react-e {
-  animation: wave-up 3s ease-in-out infinite;
+
+.react-1 {
   animation-delay: 0.2s;
 }
-.react-a {
-  animation: wave-up 3s ease-in-out infinite;
+
+.react-2 {
   animation-delay: 0.4s;
 }
-.react-c {
-  animation: wave-up 3s ease-in-out infinite;
+
+.react-3 {
   animation-delay: 0.6s;
 }
-.react-t {
-  animation: wave-up 3s ease-in-out infinite;
+
+.react-4 {
   animation-delay: 0.8s;
+}
+
+.react-5 {
+  animation-delay: 1s;
 }
 
 @keyframes wave-up {

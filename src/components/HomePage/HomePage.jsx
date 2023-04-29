@@ -24,13 +24,19 @@ function HomePage(props) {
         <div className={styles.welcome}>
           Welcome to my porfolio website!
           <p className={styles.name}>
-            {signstart}πr framework={barStart}props.
+            {signstart}πr framework={barStart}
             <div className={styles.reactAnimation}>
-              <div className={styles['react-r']}>r</div>
-              <div className={styles['react-e']}>e</div>
-              <div className={styles['react-a']}>a</div>
-              <div className={styles['react-c']}>c</div>
-              <div className={styles['react-t']}>t</div>
+            <div className={`${styles['react-1']} ${styles.animated}`}>p</div>
+              <div className={`${styles['react-2']} ${styles.animated}`}>r</div>
+              <div className={`${styles['react-3']} ${styles.animated}`}>o</div>
+              <div className={`${styles['react-4']} ${styles.animated}`}>p</div>
+              <div className={`${styles['react-5']} ${styles.animated}`}>s</div>
+              <div className={`${styles['react-1']} ${styles.animated}`}>.</div>
+              <div className={`${styles['react-2']} ${styles.animated}`}>r</div>
+              <div className={`${styles['react-3']} ${styles.animated}`}>e</div>
+              <div className={`${styles['react-4']} ${styles.animated}`}>a</div>
+              <div className={`${styles['react-5']} ${styles.animated}`}>c</div>
+              <div className={`${styles['react-6']} ${styles.animated}`}>t</div>
             </div>
             {barEnd}
             {signEnd} I'm Pierre {signstart}/πr{signEnd}
