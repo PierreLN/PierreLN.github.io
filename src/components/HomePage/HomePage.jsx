@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "./HomePage.module.css";
 import Card from "../UI/Card";
 import ProgressBar from "../UI/ProgressBar";
+import Animated from "../SideMenu/Animated";
 
 function HomePage(props) {
   const signEnd = ">";
@@ -25,19 +26,7 @@ function HomePage(props) {
           Welcome to my porfolio website!
           <p className={styles.name}>
             {signstart}πr framework={barStart}
-            <div className={styles.reactAnimation}>
-            <div className={`${styles['react-1']} ${styles.animated}`}>p</div>
-              <div className={`${styles['react-2']} ${styles.animated}`}>r</div>
-              <div className={`${styles['react-3']} ${styles.animated}`}>o</div>
-              <div className={`${styles['react-4']} ${styles.animated}`}>p</div>
-              <div className={`${styles['react-5']} ${styles.animated}`}>s</div>
-              <div className={`${styles['react-1']} ${styles.animated}`}>.</div>
-              <div className={`${styles['react-2']} ${styles.animated}`}>r</div>
-              <div className={`${styles['react-3']} ${styles.animated}`}>e</div>
-              <div className={`${styles['react-4']} ${styles.animated}`}>a</div>
-              <div className={`${styles['react-5']} ${styles.animated}`}>c</div>
-              <div className={`${styles['react-6']} ${styles.animated}`}>t</div>
-            </div>
+            <Animated>props.react</Animated>
             {barEnd}
             {signEnd} I'm Pierre {signstart}/πr{signEnd}
           </p>
