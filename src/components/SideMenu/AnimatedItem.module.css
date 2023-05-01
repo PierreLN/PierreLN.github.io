@@ -3,41 +3,21 @@
   }
   
 .animated {
-    animation: wave-up 3s ease-in-out infinite;
-  }
-  
-  .react-1 {
-    animation-delay: 0.2s;
-  }
-  
-  .react-2 {
-    animation-delay: 0.4s;
-  }
-  
-  .react-3 {
-    animation-delay: 0.6s;
-  }
-  
-  .react-4 {
-    animation-delay: 0.8s;
-  }
-  
-  .react-5 {
-    animation-delay: 1s;
+    animation: wave-up 1.5s ease-in-out infinite;
   }
   
   @keyframes wave-up {
     0% {
       transform: translateY(0px);
     }
-    45% {
+    48% {
       color: green;
       transform: translateY(-5px);
     }
-    55% {
+    53% {
       transform: translateY(-5px);
     }
-    80% {
+    70% {
       transform: translateY(0px);
     }
     100% {

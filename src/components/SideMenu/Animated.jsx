@@ -5,7 +5,8 @@ const Animated = (props) => {
   const arrayWord = props.children.split("");
 
   const wordList = arrayWord.map((data, index) => (
-    <AnimatedItem key={index}>{data}</AnimatedItem>
+    
+    <AnimatedItem key={index} delayTime={index}>{data}</AnimatedItem>
   ));
 
   return <Fragment>{wordList}</Fragment>;
