@@ -37,7 +37,7 @@ function HomePage(props) {
           <ProgressBar completion={counter}></ProgressBar>
         </div>
       </Card>
-      <div className={styles.ownerAndRight}>Website build and designed with ♥ by myself</div>
+      <div className={styles.ownerAndRight}>Website built and designed with ♥ by myself</div>
     </div>
   );
 }
