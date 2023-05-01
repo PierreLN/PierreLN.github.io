@@ -28,3 +28,11 @@
   margin-right: 2%;
   font-size: larger;
 }
+
+@media only screen and (max-width: 420px) {
+  .side_menu li {
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: small;
+  }
+}

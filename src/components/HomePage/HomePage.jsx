@@ -24,12 +24,12 @@ function HomePage(props) {
       <Card className={styles.homepage_section}>
         <div className={styles.welcome}>
           Welcome to my porfolio website!
-          <p className={styles.name}>
+          <div className={styles.name}>
             {signstart}πr framework={barStart}
             <Animated>props.react</Animated>
             {barEnd}
             {signEnd} I'm Pierre {signstart}/πr{signEnd}
-          </p>
+          </div>
         </div>
         <div className={styles.presentation} onClick={onClickHandler}>
           <p className={styles.title}>Full stack developer</p>
@@ -37,6 +37,7 @@ function HomePage(props) {
           <ProgressBar completion={counter}></ProgressBar>
         </div>
       </Card>
+      <div className={styles.ownerAndRight}>Website build and designed with ♥ by myself</div>
     </div>
   );
 }

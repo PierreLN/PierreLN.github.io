@@ -43,10 +43,36 @@
   font-size: 20px;
 }
 
+.ownerAndRight {
+  position: fixed;
+  top: 95%;
+  left: 43%;
+  font-size: x-small;
+}
+
+@media only screen and (max-width: 760px) {
+  .welcome {
+    margin-top: 20%;
+    font-size: 25px;
+  }
+
+  .name {
+    font-size: 18px;
+    display: flex;
+  }
+
+  .ownerAndRight {
+    position: fixed;
+    top: 95%;
+    left: 43%;
+    font-size: xx-small;
+  }
+}
+
 @media only screen and (max-width: 420px) {
   .welcome {
     margin-top: 20%;
-    font-size: larger;
+    font-size: 20px;
   }
   .name {
     font-size: small;

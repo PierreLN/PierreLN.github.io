@@ -3,21 +3,25 @@
   }
   
 .animated {
-    animation: wave-up 1.5s ease-in-out infinite;
+    animation: wave-up 4s ease-in-out infinite;
   }
   
   @keyframes wave-up {
     0% {
       transform: translateY(0px);
     }
+    40% {
+      color: white;
+      transform: translateY(0px);
+    }
     48% {
-      color: green;
       transform: translateY(-5px);
     }
     53% {
+      color: green;
       transform: translateY(-5px);
     }
-    70% {
+    65% {
       transform: translateY(0px);
     }
     100% {
