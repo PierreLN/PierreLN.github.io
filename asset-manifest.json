@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.d277db6a.css",
-    "main.js": "/static/js/main.a518c4d0.js",
+    "main.css": "/static/css/main.d8aaf927.css",
+    "main.js": "/static/js/main.1f3fcfb8.js",
     "static/js/787.e3835ec5.chunk.js": "/static/js/787.e3835ec5.chunk.js",
     "static/media/Rice_mountain_mainpage.jpg": "/static/media/Rice_mountain_mainpage.4bbaf2c15af6f6dea030.jpg",
     "static/media/Food_Order.png": "/static/media/Food_Order.010616a12d3899d476e8.png",
-    "static/media/97_cartes.jpg": "/static/media/97_cartes.6af13b0021d90605efed.jpg",
     "static/media/profilImage_2.jpg": "/static/media/profilImage_2.09dbec544d2de0b6599c.jpg",
     "static/media/2_party.png": "/static/media/2_party.c2647fdf52bc126a9d95.png",
     "static/media/contact_me.jpg": "/static/media/contact_me.a927b1c45e7c53390a5f.jpg",
     "static/media/GreenListin1.png": "/static/media/GreenListin1.f5c4be0fcf4adc84e53a.png",
     "static/media/dalek.jpg": "/static/media/dalek.1d31a3fd2584adae152c.jpg",
-    "static/media/Shoppies.png": "/static/media/Shoppies.c3487d2c5a655058533d.png",
-    "static/media/GoPiGo3_42.jpg": "/static/media/GoPiGo3_42.e336a81cbc48b57fb87f.jpg",
+    "static/media/GoPiGo3_42.jpg": "/static/media/GoPiGo3_42.2f2bbea70f64d77b1a2f.jpg",
+    "static/media/Shoppies.png": "/static/media/Shoppies.2c9f515eed8b9446c2c2.png",
     "static/media/parking_meter.png": "/static/media/parking_meter.d06db91c431834653e02.png",
+    "static/media/97_cartes.jpg": "/static/media/97_cartes.8f7e41d1e846fd9d6a29.jpg",
     "static/media/CRM_customer_relationship_management.png": "/static/media/CRM_customer_relationship_management.235ae44d3413244f7a85.png",
     "index.html": "/index.html",
-    "main.d277db6a.css.map": "/static/css/main.d277db6a.css.map",
-    "main.a518c4d0.js.map": "/static/js/main.a518c4d0.js.map",
+    "main.d8aaf927.css.map": "/static/css/main.d8aaf927.css.map",
+    "main.1f3fcfb8.js.map": "/static/js/main.1f3fcfb8.js.map",
     "787.e3835ec5.chunk.js.map": "/static/js/787.e3835ec5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d277db6a.css",
-    "static/js/main.a518c4d0.js"
+    "static/css/main.d8aaf927.css",
+    "static/js/main.1f3fcfb8.js"
   ]
 }
