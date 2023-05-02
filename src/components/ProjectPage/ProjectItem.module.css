@@ -22,6 +22,8 @@
   font-size: xx-large;
   font-weight: bold;
   text-align: center;
+  color: greenyellow;
+
 }
 
 .project_description {
@@ -45,6 +47,10 @@
 .project_image:hover {
   transform: scale(1.1);
   cursor: zoom-in;
+}
+
+.project_language {
+  color: greenyellow;
 }
 
 @media only screen and (max-width: 1650px) {

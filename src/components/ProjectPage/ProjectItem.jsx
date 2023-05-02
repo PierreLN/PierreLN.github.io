@@ -31,7 +31,10 @@ const ProjectItem = (props) => {
           alt={props.title}
           className={styles.project_image}
         />
-        <Card className={styles.project_description}>{props.description}</Card>
+        <Card className={styles.project_description}>
+          {props.description}
+          <Card className={styles.project_language}>{props.language}</Card>
+        </Card>
       </div>
     </Fragment>
   );

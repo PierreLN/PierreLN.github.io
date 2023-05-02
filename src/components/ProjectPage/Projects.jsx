@@ -10,7 +10,7 @@ const Projects = (props) => {
       description:
         "Application suggesting lists of real grocery products according to their current price, their supplier and the variation of the market. The application has a scraper that will browse all pages of the target sites to populate a database with information collected. A UI is available offering the possibility of displaying the search elements as well as the creation of a user account. An auto search feature is integrated through a ternary search tree data structure.",
       image: require("../../Images/GreenListin1.png"),
-      language: "== Python - HTML/CSS - Javascript ==",
+      language: "== Python - Flask - HTML/CSS - Javascript - React ==",
     },
     {
       title: "Shoppies",
@@ -27,18 +27,18 @@ const Projects = (props) => {
       language: "== HTML/CSS - Javascript - React ==",
     },
     {
+      title: "CRM",
+      description:
+      "A CRM (Customer Relationship Management) app built with Django web application that enables businesses to manage customer interactions, track sales and marketing efforts, and streamline customer communication.",
+      image: require("../../Images/CRM_customer_relationship_management.png"),
+      language: "== Python - Django - HTML ==",
+    },
+    {
       title: "GoPiGo3_42",
       description:
         "Build a generic library that implements a State Machine design, software framework. The library is integrated into application tasks for a GoPiGo3 robot.",
       image: require("../../Images/GoPiGo3_42.jpg"),
       language: "== Python ==",
-    },
-    {
-      title: "CRM",
-      description:
-        "A CRM (Customer Relationship Management) app built with Django web application that enables businesses to manage customer interactions, track sales and marketing efforts, and streamline customer communication.",
-      image: require("../../Images/CRM_customer_relationship_management.png"),
-      language: "== Python - Django ==",
     },
     {
       title: "Dalek",
@@ -52,7 +52,7 @@ const Projects = (props) => {
       description:
         "Card game on mobile where you have to empty the deck of cards by placing them on the game table in ascending and descending order.",
       image: require("../../Images/97_cartes.jpg"),
-      language: "== Java ==",
+      language: "== Java - Android Studio ==",
     },
     {
       title: "Parking Meter",
