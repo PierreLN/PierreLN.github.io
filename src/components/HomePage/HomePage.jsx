@@ -34,10 +34,14 @@ function HomePage(props) {
         <div className={styles.presentation} onClick={onClickHandler}>
           <p className={styles.title}>Full stack developer</p>
           <p className={styles.porfolio}>Porfolio</p>
-          <ProgressBar completion={counter}></ProgressBar>
+          <div className={styles.progress}>
+            <ProgressBar completion={counter}></ProgressBar>
+          </div>
         </div>
       </Card>
-      <div className={styles.ownerAndRight}>Website built and designed with ♥ by myself</div>
+      <div className={styles.ownerAndRight}>
+        Website built and designed with ♥ by myself
+      </div>
     </div>
   );
 }

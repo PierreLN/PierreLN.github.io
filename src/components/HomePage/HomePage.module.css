@@ -20,6 +20,8 @@
   padding: 5%;
   margin-left: 70%;
   transition: all 0.5s ease;
+  align-items: center;
+  text-align: center;
 }
 
 .presentation:hover {
@@ -41,6 +43,10 @@
 
 .porfolio {
   font-size: 20px;
+}
+
+.progress {
+  width: 100%;
 }
 
 .ownerAndRight {
