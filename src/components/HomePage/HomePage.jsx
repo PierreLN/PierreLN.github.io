@@ -15,7 +15,7 @@ function HomePage(props) {
     if (counter >= 99) {
       props.onClick("project");
     } else {
-      setCounter(counter + 33);
+      setCounter(counter + 100);
     }
   };
 
