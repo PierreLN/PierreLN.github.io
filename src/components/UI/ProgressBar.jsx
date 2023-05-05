@@ -15,7 +15,7 @@ function ProgressBar(props) {
   return (
     <div>
       <div className={styles.label}>
-        <div type={props.type} className={`${!isReady ? styles['container-red'] : styles.container}`}>
+        <div type={props.type} className={`${styles.container} ${!isReady ? styles.red : '' }`}>
           {progress}
         </div>
       </div>
