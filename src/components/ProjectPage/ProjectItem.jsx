@@ -18,6 +18,8 @@ const ProjectItem = (props) => {
     <Fragment>
       {projectSelected && (
         <Modal
+          id={props.id}
+          key={props.key}
           title={props.title}
           message={props.description}
           image={props.image}
