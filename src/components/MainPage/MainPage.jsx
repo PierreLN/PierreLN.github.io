@@ -5,10 +5,10 @@ import HomePage from "../HomePage/HomePage";
 import ProjectPage from "../ProjectPage/ProjectPage";
 import ContactPage from "../ContactPage/ContactPage";
 
-function MainPage(props) {
+function MainPage({onClick, selectedPage}) {
   const mainPageRef = useRef(null);
 
-  const homePage = <HomePage onClick={props.onClick}></HomePage>;
+  const homePage = <HomePage onClick={onClick}></HomePage>;
   const aboutPage = <AboutPage></AboutPage>;
   const projectPage = <ProjectPage></ProjectPage>;
   const contactPage = <ContactPage></ContactPage>;
@@ -16,16 +16,16 @@ function MainPage(props) {
   const [currentPage, setCurrentPage] = useState(homePage);
 
   useEffect(() => {
-    if (props.selectedPage === "about") {
+    if (selectedPage === "about") {
       setCurrentPage(aboutPage);
-    } else if (props.selectedPage === "home") {
+    } else if (selectedPage === "home") {
       setCurrentPage(homePage);
-    } else if (props.selectedPage === "project") {
+    } else if (selectedPage === "project") {
       setCurrentPage(projectPage);
-    } else if (props.selectedPage === "contact") {
+    } else if (selectedPage === "contact") {
       setCurrentPage(contactPage);
     }
-  }, [props.selectedPage]);
+  }, [selectedPage]);
 
   return (
     <div className={styles.main_page} ref={mainPageRef}>

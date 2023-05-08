@@ -3,7 +3,7 @@ import styles from "./ProjectItem.module.css";
 import Card from "../../UI/Card";
 import Modal from "../../UI/Modal";
 
-const ProjectItem = (id, key, title, description, image, language) => {
+function ProjectItem({id, title, description, image, language}) {
   const [projectSelected, setProjectSelected] = useState(false);
 
   const projectSelectHandler = (event) => {
@@ -18,8 +18,8 @@ const ProjectItem = (id, key, title, description, image, language) => {
     <Fragment>
       {projectSelected && (
         <Modal
+          key={id}
           id={id}
-          key={key}
           title={title}
           message={description}
           image={image}

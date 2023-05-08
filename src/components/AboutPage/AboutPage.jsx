@@ -1,10 +1,9 @@
 import React from "react";
-import Button from "../UI/Button";
 import Card from "../UI/Card";
 import profilImage from "../../Images/profilImage_2.jpg";
 import styles from "./AboutPage.module.css";
 
-function AboutPage(props) {
+function AboutPage() {
   const title = <h2>About me</h2>;
   const presentation = (
     <div>

@@ -2,19 +2,19 @@ import React from "react";
 import styles from "./SideMenu.module.css";
 import Button from "../UI/Button";
 
-function SideMenu(props) {
+function SideMenu({onMove}) {
 
   const homePageHandler = () => {
-    props.onMove("home");
+    onMove("home");
   };
   const aboutPageHandler = () => {
-    props.onMove("about");
+    onMove("about");
   };
   const ProjectPageHandler = () => {
-    props.onMove("project");
+    onMove("project");
   };
   const ContactPageHandler = () => {
-    props.onMove("contact");
+    onMove("contact");
   };
 
   return (

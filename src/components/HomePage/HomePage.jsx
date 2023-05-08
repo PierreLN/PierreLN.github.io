@@ -4,16 +4,16 @@ import Card from "../UI/Card";
 import ProgressBar from "../UI/ProgressBar";
 import Animated from "../SideMenu/Animated";
 
-function HomePage(props) {
+function HomePage({onClick}) {
   const signEnd = ">";
   const signstart = "<";
   const barStart = "{";
   const barEnd = "}";
-  let [counter, setCounter] = useState(0);
+  const [counter, setCounter] = useState(0);
 
   const onClickHandler = () => {
     if (counter >= 99) {
-      props.onClick("project");
+      onClick("project");
     } else {
       setCounter(counter + 100);
     }

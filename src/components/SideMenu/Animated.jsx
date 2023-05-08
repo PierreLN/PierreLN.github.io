@@ -1,8 +1,8 @@
 import { Fragment } from "react";
 import AnimatedItem from "./AnimatedItem";
 
-const Animated = (props) => {
-  const arrayWord = props.children.split("");
+function Animated({children}) {
+  const arrayWord = children.split("");
 
   const wordList = arrayWord.map((data, index) => (
     

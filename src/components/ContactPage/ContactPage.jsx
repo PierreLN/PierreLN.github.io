@@ -3,7 +3,7 @@ import styles from "./ContactPage.module.css";
 import Card from "../UI/Card";
 import ErrorModal from "../UI/ErrorModal";
 
-function ContactPage(props) {
+function ContactPage() {
   let email = "pierrelongnguyen@gmail.com";
 
   const [error, setError] = useState(null);

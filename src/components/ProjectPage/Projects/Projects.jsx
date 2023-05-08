@@ -1,8 +1,8 @@
-import React, { useState, Fragment } from "react";
+import React, { Fragment } from "react";
 import styles from "./Projects.module.css";
 import ProjectItem from "./ProjectItem";
 
-const Projects = () => {
+function Projects() {
   const PROJECT_LIST = [
     {
       id: "p1",
@@ -81,6 +81,7 @@ const Projects = () => {
   const projectList = PROJECT_LIST.map((project) => (
     <ProjectItem
       key={project.id}
+      id={project.id}
       title={project.title}
       description={project.description}
       language={project.language}

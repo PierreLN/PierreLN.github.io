@@ -3,39 +3,39 @@ import Card from "./Card";
 import ReactDOM from "react-dom";
 import styles from "./Modal.module.css";
 
-const Backdrop = (props) => {
-  return <div className={styles.backdrop} onClick={props.onConfirm}></div>;
+const Backdrop = ({onConfirm}) => {
+  return <div className={styles.backdrop} onClick={onConfirm}></div>;
 };
 
-const Overlay = (props) => {
+const Overlay = ({title, message, image}) => {
   return (
     <Card className={styles.modal}>
       <header>
-        <h2>{props.title}</h2>
+        <h2>{title}</h2>
       </header>
       <div>
         <div className={styles.image_section}>
-          <img className={styles.image} src={props.image} alt={props.image} />
+          <img className={styles.image} src={image} alt={image} />
         </div>
-        <p>{props.message}</p>
+        <p>{message}</p>
       </div>
     </Card>
   );
 };
 
-const Modal = (props) => {
+const Modal = ({onConfirm, title, message, image}) => {
   return (
     <Fragment>
       {ReactDOM.createPortal(
-        <Backdrop onConfirm={props.onConfirm}></Backdrop>,
+        <Backdrop onConfirm={onConfirm}></Backdrop>,
         document.getElementById("backdrop-root")
       )}
       {ReactDOM.createPortal(
         <Overlay
-          title={props.title}
-          image={props.image}
-          message={props.message}
-          onConfirm={props.onConfirm}
+          title={title}
+          image={image}
+          message={message}
+          onConfirm={onConfirm}
         ></Overlay>,
         document.getElementById("overlay-root")
       )}
