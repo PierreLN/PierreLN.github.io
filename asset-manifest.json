@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.3f4c8679.css",
-    "main.js": "/static/js/main.b4e53554.js",
+    "main.js": "/static/js/main.14aaf54d.js",
     "static/js/787.e3835ec5.chunk.js": "/static/js/787.e3835ec5.chunk.js",
     "static/media/Rice_mountain_mainpage.jpg": "/static/media/Rice_mountain_mainpage.4bbaf2c15af6f6dea030.jpg",
-    "static/media/Food_Order.png": "/static/media/Food_Order.010616a12d3899d476e8.png",
+    "static/media/Food_Order.png": "/static/media/Food_Order.1909b2717d00982e93a3.png",
     "static/media/profilImage_2.jpg": "/static/media/profilImage_2.09dbec544d2de0b6599c.jpg",
     "static/media/2_party.png": "/static/media/2_party.c2647fdf52bc126a9d95.png",
     "static/media/contact_me.jpg": "/static/media/contact_me.a927b1c45e7c53390a5f.jpg",
@@ -17,11 +17,11 @@
     "static/media/CRM_customer_relationship_management.png": "/static/media/CRM_customer_relationship_management.235ae44d3413244f7a85.png",
     "index.html": "/index.html",
     "main.3f4c8679.css.map": "/static/css/main.3f4c8679.css.map",
-    "main.b4e53554.js.map": "/static/js/main.b4e53554.js.map",
+    "main.14aaf54d.js.map": "/static/js/main.14aaf54d.js.map",
     "787.e3835ec5.chunk.js.map": "/static/js/787.e3835ec5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3f4c8679.css",
-    "static/js/main.b4e53554.js"
+    "static/js/main.14aaf54d.js"
   ]
 }
