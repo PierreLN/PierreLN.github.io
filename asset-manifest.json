@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.3f4c8679.css",
-    "main.js": "/static/js/main.e63f4954.js",
+    "main.js": "/static/js/main.b4e53554.js",
     "static/js/787.e3835ec5.chunk.js": "/static/js/787.e3835ec5.chunk.js",
     "static/media/Rice_mountain_mainpage.jpg": "/static/media/Rice_mountain_mainpage.4bbaf2c15af6f6dea030.jpg",
     "static/media/Food_Order.png": "/static/media/Food_Order.010616a12d3899d476e8.png",
@@ -17,11 +17,11 @@
     "static/media/CRM_customer_relationship_management.png": "/static/media/CRM_customer_relationship_management.235ae44d3413244f7a85.png",
     "index.html": "/index.html",
     "main.3f4c8679.css.map": "/static/css/main.3f4c8679.css.map",
-    "main.e63f4954.js.map": "/static/js/main.e63f4954.js.map",
+    "main.b4e53554.js.map": "/static/js/main.b4e53554.js.map",
     "787.e3835ec5.chunk.js.map": "/static/js/787.e3835ec5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3f4c8679.css",
-    "static/js/main.e63f4954.js"
+    "static/js/main.b4e53554.js"
   ]
 }
