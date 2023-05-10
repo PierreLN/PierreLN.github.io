@@ -24,7 +24,7 @@ function Projects() {
       id: "p3",
       title: "Food Order",
       description:
-        "A food web-based application. Users can place orders and pay for them directly through the app.",
+        "A web-based application simulating food orders. Users can place orders and view billing",
       image: require("../../../Images/Food_Order.png"),
       language: "== HTML/CSS - Javascript - React ==",
     },
