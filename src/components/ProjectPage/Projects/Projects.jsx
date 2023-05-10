@@ -38,7 +38,7 @@ function Projects() {
     },
     {
       id: "p5",
-      title: "GoPiGo3_42",
+      title: "GoPiGo3_42", 
       description:
         "Build a generic library that implements a State Machine design, software framework. The library is integrated into application tasks for a GoPiGo3 robot.",
       image: require("../../../Images/GoPiGo3_42.jpg"),
