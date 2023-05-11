@@ -8,7 +8,7 @@ function Projects() {
       id: "p1",
       title: "GreenListin",
       description:
-        "Application suggesting lists of real grocery products according to their current price, their supplier and the variation of the market. The application has a scraper that will browse all pages of the target sites to populate a database with information collected. A UI is available offering the possibility of displaying the search elements as well as the creation of a user account. An auto search feature is integrated through a ternary search tree data structure.",
+        "Application Full Stack - suggesting the personal grocery lists included the location and price information, based on real market database that integrated by an auto search feature through a ternary search tree data structure.",
       image: require("../../../Images/GreenListin1.png"),
       language: "== Python - Flask - HTML/CSS - Javascript - React ==",
     },
@@ -16,7 +16,7 @@ function Projects() {
       id: "p2",
       title: "Shoppies",
       description:
-        "App to help manage movie nominations for the upcoming Shoppies. Search results come from OMDB's API (free API key: http://www.omdbapi.com/apikey.aspx).",
+        "An application that helps manage movie nominations for the upcoming Shoppies event. The search results come from OMDB's API (free API key: http://www.omdbapi.com/apikey.aspx).",
       image: require("../../../Images/Shoppies.png"),
       language: "== HTML/CSS - Javascript - React ==",
     },
@@ -24,7 +24,7 @@ function Projects() {
       id: "p3",
       title: "Food Order",
       description:
-        "A web-based application simulating food orders. Users can place orders and view billing",
+        "A food orders web-based application that allows end-users to place orders and review the invoice.",
       image: require("../../../Images/Food_Order.png"),
       language: "== HTML/CSS - Javascript - React ==",
     },
@@ -32,7 +32,7 @@ function Projects() {
       id: "p4",
       title: "CRM",
       description:
-        "A CRM (Customer Relationship Management) app built with Django web application that enables businesses to manage customer interactions, track sales and marketing efforts, and streamline customer communication.",
+        "Customer Relationship Management – A web application built with Django that enables businesses to manage customer interactions, monitor sales and marketing projects, and streamline customer communication.",
       image: require("../../../Images/CRM_customer_relationship_management.png"),
       language: "== Python - Django - HTML ==",
     },
@@ -40,7 +40,7 @@ function Projects() {
       id: "p5",
       title: "GoPiGo3_42", 
       description:
-        "Build a generic library that implements a State Machine design, software framework. The library is integrated into application tasks for a GoPiGo3 robot.",
+        "A generic library that implements a software framework - State Machine design, which can be used to integrate into GoPiGo3 robot’s tasks.",
       image: require("../../../Images/GoPiGo3_42.jpg"),
       language: "== Python ==",
     },
