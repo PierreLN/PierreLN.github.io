@@ -6,15 +6,35 @@
   justify-content: center;
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 17, 2, 0.6)
-    ),
-    url("../../Images/Rice_mountain_mainpage1.jpg");
+  overflow: hidden;
   background-repeat: no-repeat;
   background-position: center;
-  background-size:cover;
-  overflow: hidden;
+  background-size: cover;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 17, 2, 0.6)
+  );
 }
 
+.backgroundPicture0 {
+  background-image: url("../../Images/Mountain0.jpg");
+}
+.backgroundPicture1 {
+  background-image: url("../../Images/Mountain1.jpg");
+}
+.backgroundPicture2 {
+  background-image: url("../../Images/Mountain2.jpg");
+}
+.backgroundPicture3 {
+  background-image: url("../../Images/Mountain3.jpg");
+}
+.backgroundPicture4 {
+  background-image: url("../../Images/Mountain4.jpg");
+}
+.backgroundPicture5 {
+  background-image: url("../../Images/Mountain5.jpg");
+}
+.backgroundPicture6 {
+  background-image: url("../../Images/Mountain6.jpg");
+}

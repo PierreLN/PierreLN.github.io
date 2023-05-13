@@ -6,6 +6,7 @@ import ProjectPage from "../ProjectPage/ProjectPage";
 import ContactPage from "../ContactPage/ContactPage";
 
 function MainPage({onClick, selectedPage}) {
+                   
   const mainPageRef = useRef(null);
 
   const homePage = <HomePage onClick={onClick}></HomePage>;
@@ -14,6 +15,7 @@ function MainPage({onClick, selectedPage}) {
   const contactPage = <ContactPage></ContactPage>;
 
   const [currentPage, setCurrentPage] = useState(homePage);
+  const [background, setBackground] = useState('backgroundPicture0')
 
   useEffect(() => {
     if (selectedPage === "about") {
@@ -27,8 +29,18 @@ function MainPage({onClick, selectedPage}) {
     }
   }, [selectedPage]);
 
+  useEffect(() => {
+    let currentIndex = 0;
+    const intervalId = setInterval(() => {
+      currentIndex = (currentIndex + 1) % 6;
+      setBackground(`backgroundPicture${currentIndex}`);
+    }, 25000);
+  
+    return () => clearInterval(intervalId);
+  }, []);
+
   return (
-    <div className={styles.main_page} ref={mainPageRef}>
+    <div className={`${styles.main_page} ${styles[background]}`}  ref={mainPageRef}>
       {currentPage}
     </div>
   );
