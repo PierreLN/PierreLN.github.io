@@ -15,26 +15,27 @@
     rgba(0, 0, 0, 0.2),
     rgba(0, 17, 2, 0.6)
   );
+  animation: pop 3.25s ease-in-out;
+
+}
+
+.backgroundAnimation {
+  animation: pop 3.25s ease-in-out;
 }
 
 .backgroundPicture0 {
-  background-image: url("../../Images/Mountain0.jpg");
-}
-.backgroundPicture1 {
   background-image: url("../../Images/Mountain1.jpg");
 }
-.backgroundPicture2 {
+.backgroundPicture1 {
   background-image: url("../../Images/Mountain2.jpg");
 }
-.backgroundPicture3 {
+.backgroundPicture2 {
   background-image: url("../../Images/Mountain3.jpg");
 }
-.backgroundPicture4 {
+.backgroundPicture3 {
   background-image: url("../../Images/Mountain4.jpg");
 }
-.backgroundPicture5 {
-  background-image: url("../../Images/Mountain5.jpg");
-}
-.backgroundPicture6 {
-  background-image: url("../../Images/Mountain6.jpg");
-}
+
+
+
+

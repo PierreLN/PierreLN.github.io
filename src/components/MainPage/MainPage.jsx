@@ -32,7 +32,7 @@ function MainPage({onClick, selectedPage}) {
   useEffect(() => {
     let currentIndex = 0;
     const intervalId = setInterval(() => {
-      currentIndex = (currentIndex + 1) % 6;
+      currentIndex = (currentIndex + 1) % 4;
       setBackground(`backgroundPicture${currentIndex}`);
     }, 25000);
   
@@ -40,7 +40,7 @@ function MainPage({onClick, selectedPage}) {
   }, []);
 
   return (
-    <div className={`${styles.main_page} ${styles[background]}`}  ref={mainPageRef}>
+    <div className={`${styles.main_page} ${styles[background]} ${styles.backgroundAnimation}` } ref={mainPageRef}>
       {currentPage}
     </div>
   );
