@@ -32,7 +32,7 @@ function MainPage({onClick, selectedPage}) {
   useEffect(() => {
     let currentIndex = 0;
     const intervalId = setInterval(() => {
-      currentIndex = (currentIndex + 1) % 4;
+      currentIndex = (currentIndex + 1) % 2;
       setBackground(`backgroundPicture${currentIndex}`);
     }, 25000);
   
