@@ -29,10 +29,11 @@ function MainPage({onClick, selectedPage}) {
     }
   }, [selectedPage]);
 
+  // For picture rotation - not activated
   useEffect(() => {
     let currentIndex = 0;
     const intervalId = setInterval(() => {
-      currentIndex = (currentIndex + 1) % 2;
+      currentIndex = (currentIndex + 1) % 1;
       setBackground(`backgroundPicture${currentIndex}`);
     }, 25000);
   
