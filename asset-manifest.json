@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.840e1c65.css",
-    "main.js": "/static/js/main.319a64a0.js",
+    "main.css": "/static/css/main.8a164204.css",
+    "main.js": "/static/js/main.70a0f6e2.js",
     "static/js/787.e3835ec5.chunk.js": "/static/js/787.e3835ec5.chunk.js",
     "static/media/Mountain2.jpg": "/static/media/Mountain2.f6d9f12bf6ff5e531d84.jpg",
     "static/media/Mountain1.jpg": "/static/media/Mountain1.4bbaf2c15af6f6dea030.jpg",
@@ -17,12 +17,12 @@
     "static/media/97_cartes.jpg": "/static/media/97_cartes.8f7e41d1e846fd9d6a29.jpg",
     "static/media/CRM_customer_relationship_management.png": "/static/media/CRM_customer_relationship_management.235ae44d3413244f7a85.png",
     "index.html": "/index.html",
-    "main.840e1c65.css.map": "/static/css/main.840e1c65.css.map",
-    "main.319a64a0.js.map": "/static/js/main.319a64a0.js.map",
+    "main.8a164204.css.map": "/static/css/main.8a164204.css.map",
+    "main.70a0f6e2.js.map": "/static/js/main.70a0f6e2.js.map",
     "787.e3835ec5.chunk.js.map": "/static/js/787.e3835ec5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.840e1c65.css",
-    "static/js/main.319a64a0.js"
+    "static/css/main.8a164204.css",
+    "static/js/main.70a0f6e2.js"
   ]
 }
