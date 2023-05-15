@@ -35,7 +35,7 @@ function MainPage({onClick, selectedPage}) {
     const intervalId = setInterval(() => {
       currentIndex = (currentIndex + 1) % 2;
       setBackground(`backgroundPicture${currentIndex}`);
-    }, 25000);
+    }, 50000);
   
     return () => clearInterval(intervalId);
   }, []);
