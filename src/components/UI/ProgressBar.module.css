@@ -30,6 +30,7 @@
       linear-gradient(#000000, #000000), linear-gradient(#000000, #1aff00),
       linear-gradient(#000000, #000000);
     animation: rotate 5s linear infinite;
+    
   }
 
   &::after {
@@ -76,6 +77,7 @@
         #000000
       );
     border-radius: 5px;
+    animation: boom 6s ease-in-out infinite alternate;
   }
 }
 
@@ -136,6 +138,26 @@
     transform: rotate(-1turn);
   }
 }
+
+@keyframes boom {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  40% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 0.0;
+    transform: scale(0.5);
+  }
+}
+
 
 @media only screen and (max-width: 760px) {
   .label {
