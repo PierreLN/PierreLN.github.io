@@ -29,6 +29,14 @@ function Projects() {
       language: "== HTML/CSS - Javascript - React ==",
     },
     {
+      id: "p3-1",
+      title: "ThisIsUs (In dev)",
+      description:
+        "A wedding website deployed on github page that let guess get informations and make RSVP",
+      image: require("../../../Images/website3.png"),
+      language: "== HTML/CSS - Javascript - React - Typescript==",
+    },
+    {
       id: "p4",
       title: "CRM",
       description:
