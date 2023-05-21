@@ -19,6 +19,7 @@
   box-shadow: 15px 14px 33px rgba(255, 255, 255, 0.642);
   z-index: 2;
   animation: slide-up 1s ease-out forwards;
+  
 }
 
 .header {
