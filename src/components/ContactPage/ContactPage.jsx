@@ -1,4 +1,4 @@
-import React, { useState, useRef} from "react";
+import React, { useState, useRef, useEffect } from "react";
 import styles from "./ContactPage.module.css";
 import Card from "../UI/Card";
 import ErrorModal from "../UI/ErrorModal";
@@ -7,10 +7,40 @@ function ContactPage() {
   let email = "pierrelongnguyen@gmail.com";
 
   const [error, setError] = useState(null);
+  const [sentMail, setSentMail] = useState({
+    fullname: "",
+    email: "",
+    message: "",
+  });
   const nameRef = useRef();
   const emailRef = useRef();
   const messageRef = useRef();
 
+  const onSubmitHanlder = async (event) => {
+    event.preventDefault();
+    try {
+      await fetch(
+        "https://react-http-6ae90-default-rtdb.firebaseio.com/email.json",
+        {
+          method: "POST",
+          body: JSON.stringify(sentMail),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const onChangeHandler = () => {
+    setSentMail({
+      fullname: nameRef.current.value,
+      email: emailRef.current.value,
+      message: messageRef.current.value,
+    });
+  };
 
   const errorHandler = () => {
     setError(null);
@@ -18,9 +48,9 @@ function ContactPage() {
 
   const socialMediaHandler = (data) => {
     if (data.target.innerHTML === "LinkedIn") {
-      window.location.href = ("https://www.linkedin.com/in/pierreln/");
+      window.location.href = "https://www.linkedin.com/in/pierreln/";
     } else if (data.target.innerHTML === "Github") {
-      window.location.href = ("https://github.com/PierreLN");
+      window.location.href = "https://github.com/PierreLN";
     }
   };
 
@@ -38,8 +68,7 @@ function ContactPage() {
       <Card className={styles.contact_me}>
         <div className={styles.contact_me_section}>
           <form
-            action={`mailto:${email}`}
-            method="post"
+            onSubmit={onSubmitHanlder}
             encType="text/plain"
             className={styles.form_main_box}
           >
@@ -54,6 +83,7 @@ function ContactPage() {
                 name="name"
                 id="name"
                 ref={nameRef}
+                onChange={onChangeHandler}
               ></input>
               <label className={styles.email} htmlFor="email">
                 Email
@@ -64,6 +94,7 @@ function ContactPage() {
                 type="email"
                 name="email"
                 id="email"
+                onChange={onChangeHandler}
               ></input>
               <label className={styles.message} htmlFor="message">
                 Message
@@ -75,6 +106,7 @@ function ContactPage() {
                 id="message"
                 placeholder="Any questions?"
                 ref={messageRef}
+                onChange={onChangeHandler}
               ></textarea>
             </div>
             <div>
@@ -87,9 +119,7 @@ function ContactPage() {
             <div className={styles.info}>
               <div className={styles.info_email}>
                 <h2>Email</h2>
-                <div className={styles.info_email_text}>
-                  {email}
-                </div>
+                <div className={styles.info_email_text}>{email}</div>
               </div>
 
               <div className={styles.info_location}>

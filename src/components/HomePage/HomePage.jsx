@@ -10,14 +10,27 @@ function HomePage({onClick}) {
   const barStart = "{";
   const barEnd = "}";
   const [counter, setCounter] = useState(0);
+  const [click, setClick] = useState(0)
 
   const onClickHandler = () => {
     if (counter >= 99) {
       onClick("project");
     } else {
       setCounter(counter + 100);
+      setClick(2)
     }
+    sayHi();
   };
+
+  async function sayHi() {
+    await fetch('https://react-http-6ae90-default-rtdb.firebaseio.com/hi.json', {
+      method: 'POST',
+      body: JSON.stringify({click:click, date: new Date()}),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    })
+  }
 
   return (
     <div className={styles.homepage}>
