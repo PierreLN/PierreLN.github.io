@@ -69,7 +69,7 @@ function MainPage({ onClick, selectedPage }) {
       }
     }
 
-    if (!isCounted && localStorage.getItem('Counted')) {
+    if (!isCounted) {
       return () => visitorAdded();
     }
   }, []);
