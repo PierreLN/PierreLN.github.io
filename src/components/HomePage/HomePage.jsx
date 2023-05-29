@@ -23,9 +23,21 @@ function HomePage({onClick}) {
   };
 
   async function sayHi() {
-    await fetch('https://react-http-6ae90-default-rtdb.firebaseio.com/hi.json', {
+    const now = new Date();
+    const options = {
+      timeZone: "America/Montreal",
+      year: "numeric",
+      month: "numeric",
+      day: "numeric",
+      hour: "numeric",
+      minute: "numeric",
+      second: "numeric",
+    };
+    const montrealTime = now.toLocaleString("en-US", options);
+
+    await fetch('https://react-http-6ae90-default-rtdb.firebaseio.com/clickedOnPortfolio.json', {
       method: 'POST',
-      body: JSON.stringify({click:click, date: new Date()}),
+      body: JSON.stringify({click:click, date: montrealTime}),
       headers: {
         'Content-Type': 'application/json',
       },

@@ -37,10 +37,23 @@ function ContactPage() {
   };
 
   const onChangeHandler = () => {
+    const now = new Date();
+    const options = {
+      timeZone: "America/Montreal",
+      year: "numeric",
+      month: "numeric",
+      day: "numeric",
+      hour: "numeric",
+      minute: "numeric",
+      second: "numeric",
+    };
+    const montrealTime = now.toLocaleString("en-US", options);
+
     setSentMail({
       fullname: nameRef.current.value,
       email: emailRef.current.value,
       message: messageRef.current.value,
+      time: montrealTime,
     });
   };
 
@@ -132,9 +145,11 @@ function ContactPage() {
   if (isSent) {
     content = (
       <div className={styles.thanks}>
-        <div className={styles['thanks-top']}>Thank you for the email</div>
+        <div className={styles["thanks-top"]}>Thank you for the email</div>
 
-        <div className={styles['thanks-bottom']}>I'll be back to you shortly!</div>
+        <div className={styles["thanks-bottom"]}>
+          I'll be back to you shortly!
+        </div>
       </div>
     );
   }
