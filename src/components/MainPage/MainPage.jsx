@@ -50,12 +50,11 @@ function MainPage({ onClick, selectedPage }) {
   useEffect(() => {
     async function visitorAdded() {
       try {
-        localStorage.setItem('Counted', true)
         let response = await fetch(
           "https://react-http-6ae90-default-rtdb.firebaseio.com/portfolio_pierreln/visitor_counter.json",
           {
             method: "POST",
-            body: JSON.stringify(montrealTime + document.referrer),
+            body: JSON.stringify(montrealTime),
             headers: {
               "Content-Type": "application/json",
             },
