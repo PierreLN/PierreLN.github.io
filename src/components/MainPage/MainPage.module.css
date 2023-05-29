@@ -23,3 +23,20 @@
 .backgroundPicture1 {
   background-image: url("../../Images/Mountain2.jpg");
 }
+
+.total-visitor {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  font-size: smaller;
+  animation: appear 0.7s;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

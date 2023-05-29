@@ -6,7 +6,20 @@ import ProjectPage from "../ProjectPage/ProjectPage";
 import ContactPage from "../ContactPage/ContactPage";
 
 function MainPage({ onClick, selectedPage }) {
-  const [visitor, setVisitor] = useState(0);
+  const now = new Date();
+  const options = {
+    timeZone: "America/Montreal",
+    year: "numeric",
+    month: "numeric",
+    day: "numeric",
+    hour: "numeric",
+    minute: "numeric",
+    second: "numeric",
+  };
+  const montrealTime = now.toLocaleString("en-US", options);
+
+  const [visitor, setVisitor] = useState(montrealTime);
+  const [isCounted, setIsCounted] = useState(false);
 
   const mainPageRef = useRef(null);
 
@@ -18,48 +31,54 @@ function MainPage({ onClick, selectedPage }) {
   const [currentPage, setCurrentPage] = useState(homePage);
   const [background, setBackground] = useState("backgroundPicture0");
 
-  // async function visitorCounting() {
-  //   try {
-  //     let response = await fetch(
-  //       "https://react-http-6ae90-default-rtdb.firebaseio.com/visitor.json"
-  //     );
-  //     let data = await response.json();
-  //     let count = 0
-  //       count = data.length;
-  //     setVisitor(count)
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // }
+  useEffect(() => {
+    async function visitorCounting() {
+      try {
+        let response = await fetch(
+          "https://react-http-6ae90-default-rtdb.firebaseio.com/visitor.json"
+        );
+        let data = await response.json();
+        let count = data ? Object.keys(data).length : 0;
+        setVisitor(count);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+    visitorCounting();
+  }, [visitor]);
 
-  // async function visitorAdded() {
-  //   try {
-  //     const response = await fetch(
-  //       "https://react-http-6ae90-default-rtdb.firebaseio.com/visitor.json",
-  //       {
-  //         method: "POST",
-  //         body: JSON.stringify(visitor + 1),
-  //         headers: {
-  //           "Content-Type": "application/json",
-  //         },
-  //       }
-  //     );
-  //     if (response.ok) {
-  //       setVisitor((prevVisitor) => prevVisitor + 1);
-  //     }
-  //   } catch (error) {
-  //     console.log(error)
-  //   }
-  // }
+  useEffect(() => {
+    async function visitorAdded() {
+      try {
+        let visitorLocalCounted = localStorage.setItem('Counted', true)
+        let response = await fetch(
+          "https://react-http-6ae90-default-rtdb.firebaseio.com/visitor.json",
+          {
+            method: "POST",
+            body: JSON.stringify(montrealTime),
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        );
+        if (response.ok) {
+          setIsCounted(true);
+        }
+      } catch (error) {
+        console.log(error);
+      }
+    }
 
+    if (!isCounted && !localStorage.getItem('Counted')) {
+      return () => visitorAdded();
+    }
+  }, []);
 
   useEffect(() => {
     if (selectedPage === "about") {
       setCurrentPage(aboutPage);
     } else if (selectedPage === "home") {
       setCurrentPage(homePage);
-      // visitorCounting()
-      // visitorAdded()
     } else if (selectedPage === "project") {
       setCurrentPage(projectPage);
     } else if (selectedPage === "contact") {
@@ -83,7 +102,7 @@ function MainPage({ onClick, selectedPage }) {
       className={`${styles.main_page} ${styles[background]} ${styles.backgroundAnimation}`}
       ref={mainPageRef}
     >
-      <div>Total Visitors: {visitor}</div>
+      <div className={styles["total-visitor"]}>Total Visitors: {visitor}</div>
       {currentPage}
     </div>
   );
