@@ -69,7 +69,7 @@ function MainPage({ onClick, selectedPage }) {
     }
 
     if (!isCounted) {
-      visitorAdded();
+      return () => visitorAdded();
     }
   }, []);
 
