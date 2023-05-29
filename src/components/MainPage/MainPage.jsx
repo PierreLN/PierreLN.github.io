@@ -45,7 +45,7 @@ function MainPage({ onClick, selectedPage }) {
       }
     }
     visitorCounting();
-  }, []);
+  }, [visitor]);
 
   useEffect(() => {
     async function visitorAdded() {
