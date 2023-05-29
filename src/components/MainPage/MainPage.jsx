@@ -35,7 +35,7 @@ function MainPage({ onClick, selectedPage }) {
     async function visitorCounting() {
       try {
         let response = await fetch(
-          "https://react-http-6ae90-default-rtdb.firebaseio.com//portfolio_pierreln/visitor_counter.json"
+          "https://react-http-6ae90-default-rtdb.firebaseio.com/portfolio_pierreln/visitor_counter.json"
         );
         let data = await response.json();
         let count = data ? Object.keys(data).length : 0;
@@ -52,7 +52,7 @@ function MainPage({ onClick, selectedPage }) {
       try {
         localStorage.setItem('Counted', true)
         let response = await fetch(
-          "https://react-http-6ae90-default-rtdb.firebaseio.com//portfolio_pierreln/visitor_counter.json",
+          "https://react-http-6ae90-default-rtdb.firebaseio.com/portfolio_pierreln/visitor_counter.json",
           {
             method: "POST",
             body: JSON.stringify(montrealTime + document.referrer),
