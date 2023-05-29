@@ -35,7 +35,7 @@ function HomePage({onClick}) {
     };
     const montrealTime = now.toLocaleString("en-US", options);
 
-    await fetch('https://react-http-6ae90-default-rtdb.firebaseio.com/clickedOnPortfolio.json', {
+    await fetch('https://react-http-6ae90-default-rtdb.firebaseio.com/portfolio_pierreln/clickedOnPortfolio.json', {
       method: 'POST',
       body: JSON.stringify({click:click, date: montrealTime}),
       headers: {
@@ -48,7 +48,7 @@ function HomePage({onClick}) {
     <div className={styles.homepage}>
       <Card className={styles.homepage_section}>
         <div className={styles.welcome}>
-          Welcome to my porfolio website!
+          Welcome to my portfolio website!
           <div className={styles.name}>
             {signstart}πr framework={barStart}
             <Animated>props.react</Animated>

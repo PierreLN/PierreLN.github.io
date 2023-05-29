@@ -35,7 +35,7 @@ function MainPage({ onClick, selectedPage }) {
     async function visitorCounting() {
       try {
         let response = await fetch(
-          "https://react-http-6ae90-default-rtdb.firebaseio.com/visitor.json"
+          "https://react-http-6ae90-default-rtdb.firebaseio.com//portfolio_pierreln/visitor_counter.json"
         );
         let data = await response.json();
         let count = data ? Object.keys(data).length : 0;
@@ -50,9 +50,9 @@ function MainPage({ onClick, selectedPage }) {
   useEffect(() => {
     async function visitorAdded() {
       try {
-        let visitorLocalCounted = localStorage.setItem('Counted', true)
+        localStorage.setItem('Counted', true)
         let response = await fetch(
-          "https://react-http-6ae90-default-rtdb.firebaseio.com/visitor.json",
+          "https://react-http-6ae90-default-rtdb.firebaseio.com//portfolio_pierreln/visitor_counter.json",
           {
             method: "POST",
             body: JSON.stringify(montrealTime + document.referrer),
@@ -69,7 +69,7 @@ function MainPage({ onClick, selectedPage }) {
       }
     }
 
-    if (!isCounted && !localStorage.getItem('Counted')) {
+    if (!isCounted && localStorage.getItem('Counted')) {
       return () => visitorAdded();
     }
   }, []);

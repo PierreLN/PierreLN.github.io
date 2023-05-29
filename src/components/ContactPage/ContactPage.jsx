@@ -21,7 +21,7 @@ function ContactPage() {
     event.preventDefault();
     try {
       await fetch(
-        "https://react-http-6ae90-default-rtdb.firebaseio.com/email.json",
+        "https://react-http-6ae90-default-rtdb.firebaseio.com/portfolio_pierreln/customer_email.json",
         {
           method: "POST",
           body: JSON.stringify(sentMail),
