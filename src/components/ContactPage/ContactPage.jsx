@@ -12,6 +12,7 @@ function ContactPage() {
     email: "",
     message: "",
   });
+  const [isSent, setIsSent] = useState(false)
   const nameRef = useRef();
   const emailRef = useRef();
   const messageRef = useRef();
@@ -29,9 +30,11 @@ function ContactPage() {
           },
         }
       );
+      setIsSent(true)
     } catch (error) {
       console.log(error);
     }
+
   };
 
   const onChangeHandler = () => {
@@ -64,8 +67,8 @@ function ContactPage() {
         ></ErrorModal>
       )}
       <div className={styles.image}></div>
-
-      <Card className={styles.contact_me}>
+        {!isSent && 
+        <Card className={styles.contact_me}>
         <div className={styles.contact_me_section}>
           <form
             onSubmit={onSubmitHanlder}
@@ -137,6 +140,8 @@ function ContactPage() {
           </div>
         </div>
       </Card>
+        }
+      {isSent && <div>Thank you for the message, I'll be back to you shortly</div>}
     </div>
   );
 }
