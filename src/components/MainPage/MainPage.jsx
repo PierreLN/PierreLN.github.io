@@ -55,7 +55,7 @@ function MainPage({ onClick, selectedPage }) {
           "https://react-http-6ae90-default-rtdb.firebaseio.com/visitor.json",
           {
             method: "POST",
-            body: JSON.stringify(montrealTime),
+            body: JSON.stringify(montrealTime + document.referrer),
             headers: {
               "Content-Type": "application/json",
             },
