@@ -47,11 +47,9 @@ function AboutPage() {
   return (
     <div className={styles.about_page}>
       <Card className={styles.image}>
-        <img
+        <div
           className={styles.profil_image}
-          src={profilImage}
-          alt="Profil"
-        ></img>
+        ></div>
       </Card>
       <Card className={styles.description_section}>
         <div className={styles.description_section_2}>

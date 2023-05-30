@@ -20,6 +20,10 @@
   height: 40%;
   border-radius: 100%;
   border: 2px solid rgb(0, 0, 0);
+  background-image: url('../../Images/profilImage_2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .description_section {
@@ -83,42 +87,51 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .about_page {
-    margin-left: 50%;
-    width: 700px;
-    text-align: center;
-    display: inline-block;
-    justify-content: center;
+  .profil_image {
+    width: 190px;
+    height: 190px;
   }
 
-  .profil_image {
-    width: 200px;
-    height: 200px;
-    margin-left: 35%;
-    margin-top: 20%;
-  }
-  .description {
-    max-height: 500px;
-  }
 }
 
 @media only screen and (max-width: 420px) {
   .about_page {
-    margin-left: 320px;
-    width: 700px;
+    width: 100%;
+    height: 100%;
     text-align: center;
     display: inline-block;
     justify-content: center;
   }
 
-  .profil_image {
-    width: 200px;
-    height: 200px;
-    margin-left: 35%;
-    margin-top: 25%;
+  .image {
+    width: 100%;
+    height: 5%;
+    
   }
+  
+  .profil_image {
+    width: 100%;
+    height: 0%;
+    border: none;
+    border-radius: 0;
+    background-position: 0 10%;
+    background-size: 100%;
+
+  }
+
+.description_section {
+  width: 100%;
+  height: 100%;
+}
+
+.description_section_2 {
+  width: 90%;
+  height: 80%;
+}
+
   .description {
-    max-height: 500px;
-    font-size: smaller;
+    width: 85%;
+    height: 95%;
+    font-size: 11px;
   }
 }
