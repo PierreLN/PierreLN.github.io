@@ -4,8 +4,6 @@ import Card from "../UI/Card";
 import ErrorModal from "../UI/ErrorModal";
 
 function ContactPage() {
-  let email = "pierrelongnguyen@gmail.com";
-
   const [error, setError] = useState(null);
   const [sentMail, setSentMail] = useState({
     fullname: "",
@@ -113,8 +111,8 @@ function ContactPage() {
             onChange={onChangeHandler}
           ></textarea>
         </div>
-        <div>
-          <button className={styles.button_section} type="submit">
+        <div className={styles.button_section}>
+          <button className={styles.button_css} type="submit">
             Send
           </button>
         </div>
@@ -122,8 +120,8 @@ function ContactPage() {
       <div className={styles.info_section}>
         <div className={styles.info}>
           <div className={styles.info_email}>
-            <h2>Email</h2>
-            <div className={styles.info_email_text}>{email}</div>
+            {/* <h2>Email</h2>
+            <div className={styles.info_email_text}>{email}</div> */}
           </div>
 
           <div className={styles.info_location}>
@@ -163,7 +161,9 @@ function ContactPage() {
           onConfirm={errorHandler}
         ></ErrorModal>
       )}
-      <div className={styles.image}></div>
+      <div className={styles["image-section"]}>
+        <div className={styles.image}></div>
+      </div>
       <Card className={styles.contact_me}>{content}</Card>
     </div>
   );

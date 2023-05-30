@@ -1,10 +1,9 @@
 .project_page {
+  height: 100%;
   text-align: center;
   display: block;
   justify-content: space-between;
-  min-height: 800px;
   overflow: auto;
-  max-height: 300px;  
   animation: pop 0.5s ease-in-out;
 }
 

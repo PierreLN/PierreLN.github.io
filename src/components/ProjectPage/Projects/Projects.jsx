@@ -99,7 +99,7 @@ function Projects() {
 
   return (
     <Fragment>
-      <div className={styles.styles}>{projectList}</div>
+      <div className={styles.project}>{projectList}</div>
     </Fragment>
   );
 };

@@ -1,6 +1,6 @@
 .contactPage {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: flex;
   justify-content: space-around;
   animation: pop 1s ease-in-out;
@@ -17,10 +17,17 @@
   }
 }
 
+.image-section {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .image {
-  width: 30%;
-  height: 600px;
-  margin-left: 2%;
+  width: 80%;
+  height: 80%;
   background-image: linear-gradient(
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 0.4)
@@ -34,12 +41,13 @@
 }
 
 .contact_me {
-  width: 60%;
-  height: fit-content;
+  width: 100%;
+  height: 100%;
   text-align: center;
   animation: pop 1.5s ease-in-out;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .thanks {
@@ -64,23 +72,24 @@
 
 .contact_me_section {
   width: 80%;
-  min-width: 400px;
-  height: 550px;
-  margin-left: 2%;
-  padding: 2%;
+  height: 75%;
   display: flex;
-  justify-content: left;
+  justify-content: center;
+  align-items: center;
   box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.5);
 }
 
 .form_main_box {
-  width: 80%;
+  width: 60%;
+  height: 90%;
+  display: inline;
+  justify-content: center;
   text-align: center;
 }
 
 .form_section {
-  height: fit-content;
-  min-height: 400px;
+  width: 99%;
+  height: 80%;
 }
 
 .name {
@@ -88,8 +97,7 @@
 }
 
 .name_input {
-  width: 100%;
-  min-height: 25px;
+  width: 99%;
   padding: 1%;
 }
 
@@ -98,8 +106,7 @@
 }
 
 .email_input {
-  width: 100%;
-  min-height: 25px;
+  width: 99%;
   padding: 1%;
 }
 
@@ -108,17 +115,24 @@
 }
 
 .message_input {
-  width: 100%;
+  width: 99%;
+  height: 50%;
   padding: 1%;
-  min-height: 200px;
   line-height: 25px;
 }
 
 .button_section {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button_css {
   text-align: center;
   color: white;
   width: 150px;
-  height: fit-content;
   margin: 5% 0% 5%;
   font-size: x-large;
   border: 2px black solid;
@@ -131,33 +145,40 @@ button:hover {
   transform: scale(1.2);
 }
 
+.info_section {
+  width: 40%;
+  height: 90%;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  width: 100%;
+  height: 50%;
+}
+
 .media {
+  width: 100%;
+  height: 50%;
   text-align: center;
-  font-size: x-large;
+  font-size: large;
   display: flex;
   justify-content: space-around;
 }
 
 .contactPage_media {
-  width: fit-content;
   height: fit-content;
   box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.5);
   margin: 1%;
   padding: 5%;
   transition: all 0.5s ease-in-out;
-  margin-top: 20%;
 }
 
 .contactPage_media:hover {
   box-shadow: 0px 15px 40px 15px rgba(0, 0, 0, 0.5);
   cursor: pointer;
-}
-
-.info_section {
-  width: 50%;
-  height: fit-content;
-  padding: 2%;
-  display: inline;
+  background-color: rgb(1, 94, 1);
 }
 
 .info {
@@ -185,10 +206,18 @@ button:hover {
 }
 
 @media only screen and (max-width: 720px) {
+
   .image {
-    min-width: 435px;
-    height: 280px;
-    margin: 1%;
+    min-width: 200px;
+    height: 100%;
+    background-position: 45% 38%;
+    border-radius: 0;
+    background-color: aqua;
+  }
+
+  .info_email_text {
+    font-size: 9px;
+    margin-left: 5%;
   }
 
   .media {
@@ -198,20 +227,40 @@ button:hover {
   }
 
   .contact_me_section {
-    min-width: 420px;
+    min-width: 240px;
   }
 }
 
 @media only screen and (max-width: 420px) {
   .contactPage {
+    width: 100%;
+    height: 88%;
     display: inline-block;
     justify-content: center;
+    align-items: center;
+  }
+  .image-section {
+    width: 100%;
+    height: 20%;
   }
 
   .image {
-    min-width: 435px;
-    height: 280px;
-    margin: 1%;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+
+  .contact_me {
+    width: 100%;
+    height: 80%;
+    font-size: 12px;
+  }
+
+  .contact_me_section {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
   }
 
   .form_main_box {
@@ -222,12 +271,12 @@ button:hover {
     max-width: 180px;
   }
 
-  .media {
-    font-size: medium;
+  .button_css {
+    font-size: smaller;
   }
 
-  .contact_me_section {
-    min-width: 420px;
+  .media {
+    font-size: small;
   }
 
   .info_email_text {
@@ -239,8 +288,7 @@ button:hover {
     justify-content: center;
   }
 
-  .image {
-    margin-top: 25%;
-    margin-right: 0%;;
+  .message_input {
+    height: 35%;
   }
 }
