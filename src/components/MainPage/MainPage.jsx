@@ -1,9 +1,10 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, lazy, Suspense } from "react";
 import styles from "./MainPage.module.css";
 import AboutPage from "../AboutPage/AboutPage";
 import HomePage from "../HomePage/HomePage";
-import ProjectPage from "../ProjectPage/ProjectPage";
 import ContactPage from "../ContactPage/ContactPage";
+
+const ProjectPage = lazy(() => import("../ProjectPage/ProjectPage"))
 
 function MainPage({ onClick, selectedPage }) {
   const now = new Date();
@@ -25,7 +26,7 @@ function MainPage({ onClick, selectedPage }) {
 
   const homePage = <HomePage onClick={onClick}></HomePage>;
   const aboutPage = <AboutPage></AboutPage>;
-  const projectPage = <ProjectPage></ProjectPage>;
+  const projectPage = <Suspense fallback='Loading...'><ProjectPage></ProjectPage></Suspense>;
   const contactPage = <ContactPage></ContactPage>;
 
   const [currentPage, setCurrentPage] = useState(homePage);

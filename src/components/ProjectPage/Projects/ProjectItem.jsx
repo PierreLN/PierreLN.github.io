@@ -27,7 +27,7 @@ function ProjectItem({id, title, description, image, language}) {
         ></Modal>
       )}
       <div className={styles.project_section} onClick={projectSelectHandler}>
-        <h3 className={styles.project_name}>{title}</h3>
+        <div className={styles.project_name}>{title}</div>
         <img
           src={image}
           alt={title}
