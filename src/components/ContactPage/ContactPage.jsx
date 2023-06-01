@@ -140,7 +140,7 @@ function ContactPage() {
     </div>
   );
 
-  if (!isSent) {
+  if (isSent) {
     content = (
       <div className={styles.thanks}>
         <div className={styles['thanks-inside']}>

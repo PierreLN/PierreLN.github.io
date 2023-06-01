@@ -92,6 +92,7 @@
 .form_main_box {
   width: 60%;
   height: 90%;
+  margin-left: 2%;
   display: inline;
   justify-content: center;
   text-align: center;
