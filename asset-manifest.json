@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.0c12233d.css",
-    "main.js": "/static/js/main.bc2115c7.js",
+    "main.js": "/static/js/main.4c08ccfd.js",
     "static/css/949.8133f6d8.chunk.css": "/static/css/949.8133f6d8.chunk.css",
     "static/js/949.f4a2b55a.chunk.js": "/static/js/949.f4a2b55a.chunk.js",
     "static/js/787.e3835ec5.chunk.js": "/static/js/787.e3835ec5.chunk.js",
@@ -21,13 +21,13 @@
     "static/media/CRM_customer_relationship_management.png": "/static/media/CRM_customer_relationship_management.235ae44d3413244f7a85.png",
     "index.html": "/index.html",
     "main.0c12233d.css.map": "/static/css/main.0c12233d.css.map",
-    "main.bc2115c7.js.map": "/static/js/main.bc2115c7.js.map",
+    "main.4c08ccfd.js.map": "/static/js/main.4c08ccfd.js.map",
     "949.8133f6d8.chunk.css.map": "/static/css/949.8133f6d8.chunk.css.map",
     "949.f4a2b55a.chunk.js.map": "/static/js/949.f4a2b55a.chunk.js.map",
     "787.e3835ec5.chunk.js.map": "/static/js/787.e3835ec5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0c12233d.css",
-    "static/js/main.bc2115c7.js"
+    "static/js/main.4c08ccfd.js"
   ]
 }
