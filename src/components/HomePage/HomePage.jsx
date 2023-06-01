@@ -58,7 +58,7 @@ function HomePage({onClick}) {
         </div>
         <div className={styles.presentation} onClick={onClickHandler}>
           <p className={styles.title}>Full stack developer</p>
-          <p className={styles.porfolio}>Porfolio</p>
+          <p className={styles.porfolio}>Portfolio</p>
           <div className={styles.progress}>
             <ProgressBar completion={counter}></ProgressBar>
           </div>
