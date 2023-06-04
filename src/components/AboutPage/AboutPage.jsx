@@ -20,7 +20,7 @@ function AboutPage() {
         <br></br>
         <div>
           From HTML/CSS, JavaScript and React on the front-end, to Python, C#,
-          Neo4j, MongoDB, and SQL on the back-end, I have experience working
+          Neo4j, MongoDB, and Firebase on the back-end, I have experience working
           with a variety of tools and technologies. Whether it's designing and
           building APIs, creating responsive UIs, or implementing efficient
           database structures, I am always eager to take on new challenges and
@@ -33,13 +33,17 @@ function AboutPage() {
           give you a glimpse into my approach to development and my passion for
           creating impactful solutions. Please feel free to explore, and if you
           have any questions or would like to discuss potential opportunities,
-          don't hesitate to reach out.
+          don't hesitate to reach out on the Contact section.
         </div>
       </div>
       <br></br>
       <div>
-        Thank you for visiting, and I hope you enjoy your time here! Best
-        regards,
+        Thank you for visiting, and I hope you enjoy your time here! 
+        <br />
+        <div>
+
+        Best regards,
+        </div>
       </div>
     </div>
   );
