@@ -18,10 +18,10 @@
 .profil_image {
   width: 65%;
   height: 40%;
-  border-radius: 100%;
+  border-radius: 20%;
   border: 2px solid rgb(0, 0, 0);
   background-image: url('../../Images/profilImage_2.jpg');
-  background-position: center;
+  background-position: 50% 10%;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -46,6 +46,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 7%;
 }
 
 .description {
@@ -67,7 +68,7 @@
 .title {
   width: 100%;
   height: 10%;
-  font-size: large;
+  font-size: 30px;
   color: white;
 }
 
@@ -82,7 +83,8 @@
   background-image: linear-gradient(
     to bottom,
     rgba(255, 255, 255, 0.9),
-    rgba(161, 210, 151, 0.7)
+    rgba(255, 255, 255, 0.7),
+    rgba(161, 210, 151, 0.0)
   );
 }
 

@@ -32,7 +32,7 @@ function ProjectItem({id, title, description, image, language}) {
           src={image}
           alt={title}
           className={styles.project_image}
-        />
+        ></img>
         <Card className={styles.project_description}>
           {description}
           <Card className={styles.project_language}>{language}</Card>

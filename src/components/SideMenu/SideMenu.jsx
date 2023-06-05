@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./SideMenu.module.css";
 import Button from "../UI/Button";
+import Audio from "../UI/Audio";
 
-function SideMenu({onMove}) {
-
+function SideMenu({ onMove }) {
   const homePageHandler = () => {
     onMove("home");
   };
@@ -19,6 +19,7 @@ function SideMenu({onMove}) {
 
   return (
     <div className={styles.side_menu}>
+      <Audio/>
       <ul>
         <li>
           <Button onClick={homePageHandler}>HOME</Button>

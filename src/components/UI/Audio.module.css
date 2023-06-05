@@ -1,0 +1,29 @@
+.audioPage {
+    background-color: rgb(73, 119, 4);
+    
+}
+
+.audio {
+    box-shadow: 1px 4px 5px black;
+    background-color: rgb(73, 119, 4);
+}
+
+.audio::-webkit-media-controls-panel {
+  padding: 1%;
+  background-color: rgb(73, 119, 4);
+}
+
+.audio::-webkit-media-controls-play-button {
+  background-color: greenyellow;
+  border-radius: 50%;
+}
+
+.audio::-webkit-media-controls-timeline {
+  background-color: greenyellow;
+  border-radius: 40px;
+}
+
+.audio::-webkit-media-controls-mute-button {
+  background-color: greenyellow;
+  border-radius: 50%;
+}
