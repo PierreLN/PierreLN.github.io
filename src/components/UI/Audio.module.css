@@ -1,29 +1,54 @@
 .audioPage {
-    background-color: rgb(73, 119, 4);
-    
 }
 
 .audio {
-    box-shadow: 1px 4px 5px black;
-    background-color: rgb(73, 119, 4);
+  transform: scale(0.8);
 }
 
 .audio::-webkit-media-controls-panel {
-  padding: 1%;
-  background-color: rgb(73, 119, 4);
+  background-color: rgb(146, 146, 146, 0.4);
 }
 
 .audio::-webkit-media-controls-play-button {
-  background-color: greenyellow;
+  background-color: rgb(123, 123, 123);
   border-radius: 50%;
 }
 
 .audio::-webkit-media-controls-timeline {
-  background-color: greenyellow;
   border-radius: 40px;
 }
 
 .audio::-webkit-media-controls-mute-button {
-  background-color: greenyellow;
+  background-color: rgb(123, 123, 123);
   border-radius: 50%;
+}
+
+.audio:hover {
+  animation: shake 0.5s ease-in-out forwards;
+}
+
+.audio:not(:hover) {
+  animation: back 0.5s ease-in-out forwards;
+}
+
+@keyframes shake {
+  0% {
+    width: 100px;
+    opacity: 0.3;
+  }
+  100% {
+    width: 300px;
+    opacity: 1;
+  }
+}
+
+@keyframes back {
+  0% {
+    width: 300px;
+    opacity: 1;
+  }
+  100% {
+    width: 100px;
+    opacity: 0.5;
+  }
 }

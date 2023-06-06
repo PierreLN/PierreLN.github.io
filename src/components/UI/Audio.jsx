@@ -12,8 +12,8 @@ const Audio = () => {
     }
   }, []);
   return (
-    <div className={styles['audio-page']}>
-      <audio autoPlay ref={audioRef} className={styles.audio}>
+    <div className={styles['audioPage']}>
+      <audio controls autoPlay ref={audioRef} className={styles.audio}>
         <source src={music} type="audio/mpeg" />
         Your browser does not support the audio element.
       </audio>

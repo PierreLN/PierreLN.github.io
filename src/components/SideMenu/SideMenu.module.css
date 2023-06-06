@@ -12,6 +12,11 @@
   align-items: center;
 }
 
+.audio {
+  width: 10%;
+  height: 100%;
+}
+
 .side_menu ul {
   list-style: none;
   padding: 0;
@@ -19,7 +24,7 @@
   display: flex;
   justify-content: right;
   align-items: center;
-  width: 100%;
+  width: 80%;
   height: 100%;
 }
 
@@ -31,8 +36,10 @@
 
 @media only screen and (max-width: 420px) {
   .side_menu li {
-    margin-left: 2%;
-    margin-right: 2%;
     font-size: small;
+  }
+
+  .audio {
+    transform: scale(0.4);
   }
 }

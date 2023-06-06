@@ -19,7 +19,9 @@ function SideMenu({ onMove }) {
 
   return (
     <div className={styles.side_menu}>
-      <Audio/>
+      <div className={styles.audio}>
+        <Audio></Audio>
+      </div>
       <ul>
         <li>
           <Button onClick={homePageHandler}>HOME</Button>
