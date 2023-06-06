@@ -3,7 +3,7 @@ import styles from "./SideMenu.module.css";
 import Button from "../UI/Button";
 import Audio from "../UI/Audio";
 
-function SideMenu({ onMove }) {
+function SideMenu({ onMove, isMusicOn }) {
   const homePageHandler = () => {
     onMove("home");
   };
@@ -20,7 +20,7 @@ function SideMenu({ onMove }) {
   return (
     <div className={styles.side_menu}>
       <div className={styles.audio}>
-        <Audio></Audio>
+        <Audio isMusicOn={isMusicOn}></Audio>
       </div>
       <ul>
         <li>

@@ -4,7 +4,7 @@ import Card from "../UI/Card";
 import ProgressBar from "../UI/ProgressBar";
 import Animated from "../SideMenu/Animated";
 
-function HomePage({onClick}) {
+function HomePage({onClick, musicOn}) {
   const signEnd = ">";
   const signstart = "<";
   const barStart = "{";
@@ -18,6 +18,7 @@ function HomePage({onClick}) {
     } else {
       setCounter(counter + 100);
       setClick(2)
+      musicOn()
     }
     sayHi();
   };

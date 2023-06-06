@@ -2,18 +2,24 @@ import { useState, useEffect, useRef } from "react";
 import music from "../../Audio/homepage_soundtrack.mp3";
 import styles from './Audio.module.css'
 
-const Audio = () => {
+const Audio = ({ isMusicOn }) => {
   const audioRef = useRef(null);
 
   useEffect(() => {
     if (audioRef.current) {
-        audioRef.current.play()
       audioRef.current.volume = 0.2;
     }
   }, []);
+
+  useEffect(() => {
+    if (isMusicOn) {
+      audioRef.current.play()
+    }
+  },[isMusicOn])
+
   return (
     <div className={styles['audioPage']}>
-      <audio controls autoPlay ref={audioRef} className={styles.audio}>
+      <audio controls ref={audioRef} className={styles.audio}>
         <source src={music} type="audio/mpeg" />
         Your browser does not support the audio element.
       </audio>

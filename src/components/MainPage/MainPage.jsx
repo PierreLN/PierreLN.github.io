@@ -6,7 +6,7 @@ import ContactPage from "../ContactPage/ContactPage";
 
 const ProjectPage = lazy(() => import("../ProjectPage/ProjectPage"))
 
-function MainPage({ onClick, selectedPage }) {
+function MainPage({ onClick, selectedPage, musicOn }) {
   const now = new Date();
   const options = {
     timeZone: "America/Montreal",
@@ -24,7 +24,7 @@ function MainPage({ onClick, selectedPage }) {
 
   const mainPageRef = useRef(null);
 
-  const homePage = <HomePage onClick={onClick}></HomePage>;
+  const homePage = <HomePage onClick={onClick} musicOn={musicOn}></HomePage>;
   const aboutPage = <AboutPage></AboutPage>;
   const projectPage = <Suspense fallback='Loading...'><ProjectPage></ProjectPage></Suspense>;
   const contactPage = <ContactPage></ContactPage>;
