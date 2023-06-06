@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.0c12233d.css",
-    "main.js": "/static/js/main.908c5c5b.js",
-    "static/css/949.8133f6d8.chunk.css": "/static/css/949.8133f6d8.chunk.css",
+    "main.css": "/static/css/main.0af07964.css",
+    "main.js": "/static/js/main.45b4bea1.js",
+    "static/css/949.2d5cb231.chunk.css": "/static/css/949.2d5cb231.chunk.css",
     "static/js/949.f4a2b55a.chunk.js": "/static/js/949.f4a2b55a.chunk.js",
     "static/js/787.e3835ec5.chunk.js": "/static/js/787.e3835ec5.chunk.js",
     "static/media/Mountain2.jpg": "/static/media/Mountain2.f6d9f12bf6ff5e531d84.jpg",
+    "static/media/homepage_soundtrack.mp3": "/static/media/homepage_soundtrack.de1d28150bc9f1c647a0.mp3",
     "static/media/website3.png": "/static/media/website3.c1062e5b6bc4486f2d45.png",
     "static/media/Mountain1.jpg": "/static/media/Mountain1.4bbaf2c15af6f6dea030.jpg",
     "static/media/Food_Order.png": "/static/media/Food_Order.1909b2717d00982e93a3.png",
@@ -20,14 +21,14 @@
     "static/media/97_cartes.jpg": "/static/media/97_cartes.8f7e41d1e846fd9d6a29.jpg",
     "static/media/CRM_customer_relationship_management.png": "/static/media/CRM_customer_relationship_management.235ae44d3413244f7a85.png",
     "index.html": "/index.html",
-    "main.0c12233d.css.map": "/static/css/main.0c12233d.css.map",
-    "main.908c5c5b.js.map": "/static/js/main.908c5c5b.js.map",
-    "949.8133f6d8.chunk.css.map": "/static/css/949.8133f6d8.chunk.css.map",
+    "main.0af07964.css.map": "/static/css/main.0af07964.css.map",
+    "main.45b4bea1.js.map": "/static/js/main.45b4bea1.js.map",
+    "949.2d5cb231.chunk.css.map": "/static/css/949.2d5cb231.chunk.css.map",
     "949.f4a2b55a.chunk.js.map": "/static/js/949.f4a2b55a.chunk.js.map",
     "787.e3835ec5.chunk.js.map": "/static/js/787.e3835ec5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0c12233d.css",
-    "static/js/main.908c5c5b.js"
+    "static/css/main.0af07964.css",
+    "static/js/main.45b4bea1.js"
   ]
 }
