@@ -1,8 +1,9 @@
 .project_page {
+  width: 100%;
   height: 100%;
-  text-align: center;
   display: block;
-  justify-content: space-between;
+  justify-content: center;
+  text-align: center;
   overflow: auto;
   animation: pop 0.5s ease-in-out;
 }

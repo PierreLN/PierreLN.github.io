@@ -1,4 +1,7 @@
 .project {
     width: 100%;
     height: fit-content;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
 }

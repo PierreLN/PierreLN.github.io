@@ -30,11 +30,11 @@ function Projects() {
     },
     {
       id: "p3-1",
-      title: "ThisIsUs (In dev)",
+      title: "ThisIsUs",
       description:
         "A wedding website deployed on github page that let guess get informations and make RSVP - (https://pierreln.github.io/ThisIsUs.github.io/)",
       image: require("../../../Images/website3.png"),
-      language: "== HTML/CSS - Javascript - React - Typescript==",
+      language: "== HTML/CSS - Javascript - React - Typescript ==",
     },
     {
       id: "p4",

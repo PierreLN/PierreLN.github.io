@@ -3,7 +3,7 @@ import styles from "./ProjectItem.module.css";
 import Card from "../../UI/Card";
 import Modal from "../../UI/Modal";
 
-function ProjectItem({id, title, description, image, language}) {
+function ProjectItem({ id, title, description, image, language }) {
   const [projectSelected, setProjectSelected] = useState(false);
 
   const projectSelectHandler = (event) => {
@@ -26,20 +26,20 @@ function ProjectItem({id, title, description, image, language}) {
           onConfirm={modalOff}
         ></Modal>
       )}
-      <div className={styles.project_section} onClick={projectSelectHandler}>
-        <div className={styles.project_name}>{title}</div>
-        <img
-          src={image}
-          alt={title}
-          className={styles.project_image}
-        ></img>
-        <Card className={styles.project_description}>
-          {description}
-          <Card className={styles.project_language}>{language}</Card>
-        </Card>
+      <div className={styles.project_section}>
+        <div className={styles.project_section_2} onClick={projectSelectHandler}>
+          <div className={styles.container}>
+            <img src={image} alt={title} className={styles.project_image}></img>
+            <div className={styles.overlay}></div>
+          </div>
+          <Card className={styles.project_description}>
+            <h1 className={styles.title}>{title}</h1> <div>{description}</div>
+            <Card className={styles.project_language}>{language}</Card>
+          </Card>
+        </div>
       </div>
     </Fragment>
   );
-};
+}
 
 export default ProjectItem;
