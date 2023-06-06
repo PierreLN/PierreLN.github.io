@@ -24,11 +24,11 @@
 }
 
 .audio:hover {
-  animation: shake 0.5s ease-in-out forwards;
+  animation: shake 0.3s ease-in-out forwards;
 }
 
 .audio:not(:hover) {
-  animation: back 0.5s ease-in-out forwards;
+  animation: back 1s ease-in-out forwards;
 }
 
 @keyframes shake {
