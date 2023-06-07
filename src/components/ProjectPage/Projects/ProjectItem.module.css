@@ -151,4 +151,15 @@
     text-align: center;
     padding: 1%;
   }
+
+  .project_image:hover {
+    cursor: zoom-in;
+    animation: none;
+  }
+
+  .project_image:not(:hover) {
+    cursor: zoom-in;
+    animation: none;
+  }
+  
 }
