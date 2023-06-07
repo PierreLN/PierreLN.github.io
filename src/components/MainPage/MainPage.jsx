@@ -44,33 +44,37 @@ function MainPage({ onClick, selectedPage, musicOn }) {
       let count = data ? Object.keys(data).length : 0;
       setVisitor(count);
     };
-
-    fetchNumberOfVisitor(
-      {
+  
+    const fetchVisitorCount = async () => {
+      await fetchNumberOfVisitor(
+        {
+          url: "https://react-http-6ae90-default-rtdb.firebaseio.com/portfolio_pierreln/visitor_counter.json",
+        },
+        visitorCounting
+      );
+    };
+  
+    const addingVisitor = async () => {
+      await fetchNumberOfVisitor({
         url: "https://react-http-6ae90-default-rtdb.firebaseio.com/portfolio_pierreln/visitor_counter.json",
-      },
-      visitorCounting
-    );
-  }, []);
-
-  const addingVisitor = async () => {
-    fetchNumberOfVisitor({
-      url: "https://react-http-6ae90-default-rtdb.firebaseio.com/portfolio_pierreln/visitor_counter.json",
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(montrealTime),
-    });
-  };
-
-  useEffect(() => {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(montrealTime),
+      });
+  
+      fetchVisitorCount();
+    };
+  
+    fetchVisitorCount();
+  
     if (!isCounted) {
       addingVisitor();
       setIsCounted(true);
-
     }
   }, []);
+
 
   useEffect(() => {
     if (selectedPage === "about") {
