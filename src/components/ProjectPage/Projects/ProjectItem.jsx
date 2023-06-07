@@ -28,9 +28,8 @@ function ProjectItem({ id, title, description, image, language }) {
       )}
       <div className={styles.project_section}>
         <div className={styles.project_section_2} onClick={projectSelectHandler}>
-          <div className={styles.container}>
+          <div className={styles.container} data-title={title}>
             <img src={image} alt={title} className={styles.project_image}></img>
-            <div className={styles.overlay}></div>
           </div>
           <Card className={styles.project_description}>
             <h1 className={styles.title}>{title}</h1> <div>{description}</div>
