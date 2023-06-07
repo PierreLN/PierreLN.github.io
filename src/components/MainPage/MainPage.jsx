@@ -67,6 +67,8 @@ function MainPage({ onClick, selectedPage, musicOn }) {
   useEffect(() => {
     if (!isCounted) {
       addingVisitor();
+      setIsCounted(true);
+
     }
   }, []);
 
