@@ -44,7 +44,7 @@ function MainPage({ onClick, selectedPage, musicOn }) {
       let count = data ? Object.keys(data).length : 0;
       setVisitor(count);
     };
-  
+
     const fetchVisitorCount = async () => {
       await fetchNumberOfVisitor(
         {
@@ -53,7 +53,7 @@ function MainPage({ onClick, selectedPage, musicOn }) {
         visitorCounting
       );
     };
-  
+
     const addingVisitor = async () => {
       await fetchNumberOfVisitor({
         url: "https://react-http-6ae90-default-rtdb.firebaseio.com/portfolio_pierreln/visitor_counter.json",
@@ -62,15 +62,13 @@ function MainPage({ onClick, selectedPage, musicOn }) {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(montrealTime),
-      })
-      .then(fetchVisitorCount());
+      }).then(fetchVisitorCount());
     };
-  
-    fetchVisitorCount();
-  
-      addingVisitor();
-  }, []);
 
+    fetchVisitorCount();
+
+    addingVisitor();
+  }, []);
 
   useEffect(() => {
     if (selectedPage === "about") {
@@ -84,23 +82,18 @@ function MainPage({ onClick, selectedPage, musicOn }) {
     }
   }, [selectedPage]);
 
-  // For picture rotation - not activated
-  // useEffect(() => {
-  //   let currentIndex = 0;
-  //   const intervalId = setInterval(() => {
-  //     currentIndex = (currentIndex + 1) % 1;
-  //     setBackground(`backgroundPicture${currentIndex}`);
-  //   }, 50000);
 
-  //   return () => clearInterval(intervalId);
-  // }, []);
+  let content = <div>Total Visitors: {visitor}</div>;
+    if (isLoading) {
+      content = <div>Loading...</div>;
+    } 
 
   return (
     <div
       className={`${styles.main_page} ${styles[background]} ${styles.backgroundAnimation}`}
       ref={mainPageRef}
     >
-      <div className={styles["total-visitor"]}>Total Visitors: {visitor}</div>
+      <div className={styles["total-visitor"]}>{content}</div>
       {currentPage}
     </div>
   );
