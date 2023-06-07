@@ -62,17 +62,13 @@ function MainPage({ onClick, selectedPage, musicOn }) {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(montrealTime),
-      });
-  
-      fetchVisitorCount();
+      })
+      .then(fetchVisitorCount());
     };
   
     fetchVisitorCount();
   
-    if (!isCounted) {
       addingVisitor();
-      setIsCounted(true);
-    }
   }, []);
 
 
