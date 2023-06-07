@@ -3,8 +3,9 @@ import styles from "./MainPage.module.css";
 import AboutPage from "../AboutPage/AboutPage";
 import HomePage from "../HomePage/HomePage";
 import ContactPage from "../ContactPage/ContactPage";
+import useHttp from "../hooks/useHttp";
 
-const ProjectPage = lazy(() => import("../ProjectPage/ProjectPage"))
+const ProjectPage = lazy(() => import("../ProjectPage/ProjectPage"));
 
 function MainPage({ onClick, selectedPage, musicOn }) {
   const now = new Date();
@@ -26,51 +27,46 @@ function MainPage({ onClick, selectedPage, musicOn }) {
 
   const homePage = <HomePage onClick={onClick} musicOn={musicOn}></HomePage>;
   const aboutPage = <AboutPage></AboutPage>;
-  const projectPage = <Suspense fallback='Loading...'><ProjectPage></ProjectPage></Suspense>;
+  const projectPage = (
+    <Suspense fallback="Loading...">
+      <ProjectPage></ProjectPage>
+    </Suspense>
+  );
   const contactPage = <ContactPage></ContactPage>;
 
   const [currentPage, setCurrentPage] = useState(homePage);
   const [background, setBackground] = useState("backgroundPicture0");
 
-  useEffect(() => {
-    async function visitorCounting() {
-      try {
-        let response = await fetch(
-          "https://react-http-6ae90-default-rtdb.firebaseio.com/portfolio_pierreln/visitor_counter.json"
-        );
-        let data = await response.json();
-        let count = data ? Object.keys(data).length : 0;
-        setVisitor(count);
-      } catch (error) {
-        console.log(error);
-      }
-    }
-    visitorCounting();
-  }, [visitor]);
+  const { isLoading, error, sendRequest: fetchNumberOfVisitor } = useHttp();
 
   useEffect(() => {
-    async function visitorAdded() {
-      try {
-        let response = await fetch(
-          "https://react-http-6ae90-default-rtdb.firebaseio.com/portfolio_pierreln/visitor_counter.json",
-          {
-            method: "POST",
-            body: JSON.stringify(montrealTime),
-            headers: {
-              "Content-Type": "application/json",
-            },
-          }
-        );
-        if (response.ok) {
-          setIsCounted(true);
-        }
-      } catch (error) {
-        console.log(error);
-      }
-    }
+    const visitorCounting = async (data) => {
+      let count = data ? Object.keys(data).length : 0;
+      setVisitor(count);
+    };
 
+    fetchNumberOfVisitor(
+      {
+        url: "https://react-http-6ae90-default-rtdb.firebaseio.com/portfolio_pierreln/visitor_counter.json",
+      },
+      visitorCounting
+    );
+  }, []);
+
+  const addingVisitor = async () => {
+    fetchNumberOfVisitor({
+      url: "https://react-http-6ae90-default-rtdb.firebaseio.com/portfolio_pierreln/visitor_counter.json",
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(montrealTime),
+    });
+  };
+
+  useEffect(() => {
     if (!isCounted) {
-      visitorAdded();
+      addingVisitor();
     }
   }, []);
 
@@ -87,15 +83,15 @@ function MainPage({ onClick, selectedPage, musicOn }) {
   }, [selectedPage]);
 
   // For picture rotation - not activated
-  useEffect(() => {
-    let currentIndex = 0;
-    const intervalId = setInterval(() => {
-      currentIndex = (currentIndex + 1) % 1;
-      setBackground(`backgroundPicture${currentIndex}`);
-    }, 50000);
+  // useEffect(() => {
+  //   let currentIndex = 0;
+  //   const intervalId = setInterval(() => {
+  //     currentIndex = (currentIndex + 1) % 1;
+  //     setBackground(`backgroundPicture${currentIndex}`);
+  //   }, 50000);
 
-    return () => clearInterval(intervalId);
-  }, []);
+  //   return () => clearInterval(intervalId);
+  // }, []);
 
   return (
     <div
