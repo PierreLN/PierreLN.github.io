@@ -22,20 +22,21 @@ function SideMenu({ onMove, isMusicOn }) {
       <div className={styles.audio}>
         <Audio isMusicOn={isMusicOn}></Audio>
       </div>
-      <ul>
-        <li>
-          <Button onClick={homePageHandler}>HOME</Button>
-        </li>
-        <li>
-          <Button onClick={ProjectPageHandler}>PROJECTS</Button>
-        </li>
-        <li>
-          <Button onClick={aboutPageHandler}>ABOUT</Button>
-        </li>
-        <li>
-          <Button onClick={ContactPageHandler}>CONTACT</Button>
-        </li>
-        {/* <li>
+      <div className={styles.elements}>
+        <ul>
+          <li>
+            <Button onClick={homePageHandler}>HOME</Button>
+          </li>
+          <li>
+            <Button onClick={ProjectPageHandler}>PROJECTS</Button>
+          </li>
+          <li>
+            <Button onClick={aboutPageHandler}>ABOUT</Button>
+          </li>
+          <li>
+            <Button onClick={ContactPageHandler}>CONTACT</Button>
+          </li>
+          {/* <li>
           <Button>SERVICES</Button>
         </li>
         <li>
@@ -44,7 +45,8 @@ function SideMenu({ onMove, isMusicOn }) {
         <li>
           <Button>FR</Button>
         </li> */}
-      </ul>
+        </ul>
+      </div>
     </div>
   );
 }
