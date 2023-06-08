@@ -52,7 +52,7 @@ function HomePage({onClick, musicOn}) {
           Welcome to my portfolio website!
           <div className={styles.name}>
             {signstart}πr framework={barStart}
-            <Animated>props.react</Animated>
+            <Animated>props.react: ♪♫</Animated>
             {barEnd}
             {signEnd} I'm Pierre {signstart}/πr{signEnd}
           </div>
