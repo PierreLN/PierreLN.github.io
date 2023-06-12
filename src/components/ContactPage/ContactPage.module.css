@@ -105,6 +105,9 @@
 
 .name {
   padding: 1%;
+  display: flex;
+  justify-content: left;
+  text-align: left;
 }
 
 .name_input {
@@ -114,6 +117,9 @@
 
 .email {
   padding: 1%;
+  display: flex;
+  justify-content: left;
+  text-align: left;
 }
 
 .email_input {
@@ -123,6 +129,9 @@
 
 .message {
   padding: 1%;
+  display: flex;
+  justify-content: left;
+  text-align: left;
 }
 
 .message_input {
@@ -216,8 +225,28 @@ button:hover {
   padding-top: 5px;
 }
 
+.box-main{
+  width: 30%;
+  height: fit-content;
+}
+
+.box-second {
+  width: 70%;
+  height: fit-content;
+}
+
 .text-error {
   color: rgb(221, 81, 81);
+  animation: error 1s ease-in-out;
+}
+
+@keyframes error {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .invalid {
@@ -229,6 +258,8 @@ button:hover {
   border-color: #26ff00;
   background-color: #f4fff3;
 }
+
+
 
 @media only screen and (max-width: 720px) {
 

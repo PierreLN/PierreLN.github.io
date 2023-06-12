@@ -92,17 +92,16 @@ function ContactPage() {
 
   let content = (
     <div className={styles.contact_me_section}>
-      <form
-        onSubmit={onSubmitHanlder}
-        className={styles.form_main_box}
-      >
+      <form onSubmit={onSubmitHanlder} className={styles.form_main_box}>
         <div className={styles.form_section}>
           <h1>Contact Me</h1>
           <label className={styles.name} htmlFor="name">
-            Full Name
-            {nameHasError && (
-              <div className={styles["text-error"]}>Enter a name</div>
-            )}
+            <div className={styles["box-main"]}>Full Name</div>
+            <div className={styles["box-second"]}>
+              {nameHasError && (
+                <div className={styles["text-error"]}>- Enter a name</div>
+              )}
+            </div>
           </label>
           <input
             className={nameInputClasses}
@@ -114,10 +113,14 @@ function ContactPage() {
             value={enteredName}
           ></input>
           <label className={styles.email} htmlFor="email">
-            Email
-            {emailHasError && (
-              <div className={styles["text-error"]}>Enter a valid email</div>
-            )}
+            <div className={styles["box-main"]}>Email</div>
+            <div className={styles["box-second"]}>
+              {emailHasError && (
+                <div className={styles["text-error"]}>
+                  - Enter a valid email
+                </div>
+              )}
+            </div>
           </label>
           <input
             className={emailInputClasses}
@@ -129,10 +132,12 @@ function ContactPage() {
             value={enteredEmail}
           ></input>
           <label className={styles.message} htmlFor="message">
-            Message
-            {messageHasError && (
-              <div className={styles["text-error"]}>Enter a message</div>
-            )}
+            <div className={styles["box-main"]}>Message</div>
+            <div className={styles["box-second"]}>
+              {messageHasError && (
+                <div className={styles["text-error"]}>- Enter a message</div>
+              )}
+            </div>
           </label>
           <textarea
             className={messageInputClasses}
