@@ -216,6 +216,20 @@ button:hover {
   padding-top: 5px;
 }
 
+.text-error {
+  color: rgb(221, 81, 81);
+}
+
+.invalid {
+  border: 1px solid #b40e0e;
+  background-color: #fbf3f3;
+}
+
+.invalid:focus {
+  border-color: #26ff00;
+  background-color: #f4fff3;
+}
+
 @media only screen and (max-width: 720px) {
 
   .image {

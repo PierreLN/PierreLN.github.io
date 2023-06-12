@@ -64,9 +64,7 @@ function MainPage({ onClick, selectedPage, musicOn }) {
         body: JSON.stringify(montrealTime),
       }).then(fetchVisitorCount());
     };
-
     fetchVisitorCount();
-
     addingVisitor();
   }, []);
 
@@ -82,11 +80,10 @@ function MainPage({ onClick, selectedPage, musicOn }) {
     }
   }, [selectedPage]);
 
-
   let content = <div>Total Visitors: {visitor}</div>;
-    if (isLoading) {
-      content = <div>Loading...</div>;
-    } 
+  if (isLoading) {
+    content = <div>Loading...</div>;
+  }
 
   return (
     <div
