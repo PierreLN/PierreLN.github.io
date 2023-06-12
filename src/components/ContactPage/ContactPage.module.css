@@ -72,7 +72,6 @@
   width: 60%;
   height: fit-content;
   min-width: 300px;
-
 }
 
 .thanks-bottom {
@@ -163,6 +162,16 @@
 }
 button:hover {
   transform: scale(1.2);
+  cursor: pointer;
+}
+
+button:disabled,
+button:disabled:hover,
+button:disabled:active {
+  background-color: rgb(236, 229, 229);
+  color:rgb(29, 28, 28);
+  border: #6d6b71;
+  cursor: not-allowed;
 }
 
 .info_section {
@@ -225,7 +234,7 @@ button:hover {
   padding-top: 5px;
 }
 
-.box-main{
+.box-main {
   width: 30%;
   height: fit-content;
 }
@@ -259,10 +268,7 @@ button:hover {
   background-color: #f4fff3;
 }
 
-
-
 @media only screen and (max-width: 720px) {
-
   .image {
     min-width: 200px;
     height: 100%;
@@ -280,7 +286,7 @@ button:hover {
     height: 40%;
     min-width: 200px;
   }
-  
+
   .thanks-bottom {
     width: 100%;
     height: 60%;
