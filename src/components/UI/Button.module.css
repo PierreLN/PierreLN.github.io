@@ -3,13 +3,12 @@
   font: inherit;
   cursor: pointer;
   display: block;
-  padding: 5px;
+  padding: 1%;
   background-color: transparent;
   color: #ffffff;
   border: none;
   border-bottom: none;
   transition: all 0.2s ease;
-  
 }
 
 .button:focus {
