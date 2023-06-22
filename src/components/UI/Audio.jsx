@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import music from "../../Audio/Asian_spirit_1.mp3";
+import music from "../../Audio/Asian_spirit.mp3";
 import styles from './Audio.module.css'
 
 const Audio = ({ isMusicOn }) => {
