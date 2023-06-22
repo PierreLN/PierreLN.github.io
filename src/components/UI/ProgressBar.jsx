@@ -2,7 +2,7 @@ import styles from "./ProgressBar.module.css";
 import React, { useState, useEffect } from "react";
 
 function ProgressBar({completion, type}) {
-  const [progress, setProgress] = useState("Click Me");
+  const [progress, setProgress] = useState("Start the journey");
   const [isReady, setIsReady] = useState(false);
 
   useEffect(() => {
