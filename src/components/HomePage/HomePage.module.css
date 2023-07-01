@@ -15,7 +15,7 @@
 }
 
 .presentation {
-  width: fit-content;
+  width: 130px;
   box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.5);
   padding: 5%;
   margin-left: 70%;
@@ -72,6 +72,11 @@
     top: 95%;
     left: 43%;
     font-size: xx-small;
+  }
+
+  .presentation {
+    width: fit-content;
+
   }
 }
 

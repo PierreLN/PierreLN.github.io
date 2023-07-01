@@ -42,7 +42,7 @@ function Projects() {
       description:
         "Customer Relationship Management – A web application built with Django that enables businesses to manage customer interactions, monitor sales and marketing projects, and streamline customer communication.",
       image: require("../../../Images/CRM_customer_relationship_management.png"),
-      language: "== Python - Django - HTML ==",
+      language: "== Python - Django - HTML/CSS ==",
     },
     {
       id: "p5",
