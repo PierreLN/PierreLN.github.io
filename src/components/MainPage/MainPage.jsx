@@ -4,24 +4,14 @@ import AboutPage from "../AboutPage/AboutPage";
 import HomePage from "../HomePage/HomePage";
 import ContactPage from "../ContactPage/ContactPage";
 import useHttp from "../hooks/useHttp";
+import useTimeAndDate from "../hooks/useTimeAndDate";
 
 const ProjectPage = lazy(() => import("../ProjectPage/ProjectPage"));
 
 function MainPage({ onClick, selectedPage, musicOn }) {
-  const now = new Date();
-  const options = {
-    timeZone: "America/Montreal",
-    year: "numeric",
-    month: "numeric",
-    day: "numeric",
-    hour: "numeric",
-    minute: "numeric",
-    second: "numeric",
-  };
-  const montrealTime = now.toLocaleString("en-US", options);
+  const montrealTime = useTimeAndDate();
 
-  const [visitor, setVisitor] = useState(montrealTime);
-  const [isCounted, setIsCounted] = useState(false);
+  const [visitor, setVisitor] = useState(0);
 
   const mainPageRef = useRef(null);
 
@@ -55,13 +45,19 @@ function MainPage({ onClick, selectedPage, musicOn }) {
     };
 
     const addingVisitor = async () => {
+      const data = {
+        time: montrealTime,
+        referringPage: document.referrer,
+        Agent: navigator.userAgent,
+      };
+
       await fetchNumberOfVisitor({
         url: "https://react-http-6ae90-default-rtdb.firebaseio.com/portfolio_pierreln/visitor_counter.json",
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(montrealTime),
+        body: data,
       }).then(fetchVisitorCount());
     };
     fetchVisitorCount();
