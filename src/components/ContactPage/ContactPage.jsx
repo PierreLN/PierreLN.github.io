@@ -96,10 +96,12 @@ function ContactPage() {
         <div className={styles.form_section}>
           <h1>Contact Me</h1>
           <label className={styles.name} htmlFor="name">
-            <div className={styles["box-main"]}>Full Name</div>
+            {!nameHasError && (
+              <div className={styles["box-main"]}>Full Name</div>
+            )}
             <div className={styles["box-second"]}>
               {nameHasError && (
-                <div className={styles["text-error"]}>- Enter a name</div>
+                <div className={styles["text-error"]}>Enter a Full Name</div>
               )}
             </div>
           </label>
@@ -113,12 +115,10 @@ function ContactPage() {
             value={enteredName}
           ></input>
           <label className={styles.email} htmlFor="email">
-            <div className={styles["box-main"]}>Email</div>
+            {!emailHasError && <div className={styles["box-main"]}>Email</div>}
             <div className={styles["box-second"]}>
               {emailHasError && (
-                <div className={styles["text-error"]}>
-                  - Enter a valid email
-                </div>
+                <div className={styles["text-error"]}>Enter a valid email</div>
               )}
             </div>
           </label>
@@ -132,10 +132,10 @@ function ContactPage() {
             value={enteredEmail}
           ></input>
           <label className={styles.message} htmlFor="message">
-            <div className={styles["box-main"]}>Message</div>
+            {!messageHasError && <div className={styles["box-main"]}>Message</div>}
             <div className={styles["box-second"]}>
               {messageHasError && (
-                <div className={styles["text-error"]}>- Enter a message</div>
+                <div className={styles["text-error"]}>Enter a message</div>
               )}
             </div>
           </label>
