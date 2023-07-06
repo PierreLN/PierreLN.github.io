@@ -1,20 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./SideMenu.module.css";
 import Button from "../UI/Button";
 import Audio from "../UI/Audio";
 
 function SideMenu({ onMove, isMusicOn }) {
+  const [selected, setSelected] = useState("home");
+
   const homePageHandler = () => {
     onMove("home");
+    setSelected("home");
   };
   const aboutPageHandler = () => {
     onMove("about");
+    setSelected("about");
   };
   const ProjectPageHandler = () => {
     onMove("project");
+    setSelected("project");
   };
   const ContactPageHandler = () => {
     onMove("contact");
+    setSelected("contact");
   };
 
   return (
@@ -25,16 +31,32 @@ function SideMenu({ onMove, isMusicOn }) {
       <div className={styles.elements}>
         <ul>
           <li>
-            <Button onClick={homePageHandler}>HOME</Button>
+            {selected === "home" ? (
+              <Button onClick={homePageHandler}>{"<HOME/>"}</Button>
+            ) : (
+              <Button onClick={homePageHandler}>Home</Button>
+            )}
           </li>
           <li>
-            <Button onClick={ProjectPageHandler}>PROJECTS</Button>
+            {selected === "project" ? (
+              <Button onClick={ProjectPageHandler}>{"<PROJECTS/>"}</Button>
+            ) : (
+              <Button onClick={ProjectPageHandler}>Projects</Button>
+            )}
           </li>
           <li>
-            <Button onClick={aboutPageHandler}>ABOUT</Button>
+            {selected === "about" ? (
+              <Button onClick={aboutPageHandler}>{"<ABOUT/>"}</Button>
+            ) : (
+              <Button onClick={aboutPageHandler}>About</Button>
+            )}
           </li>
           <li>
-            <Button onClick={ContactPageHandler}>CONTACT</Button>
+            {selected === "contact" ? (
+              <Button onClick={ContactPageHandler}>{"<CONTACT/>"}</Button>
+            ) : (
+              <Button onClick={ContactPageHandler}>Contact</Button>
+            )}
           </li>
           {/* <li>
           <Button>SERVICES</Button>
