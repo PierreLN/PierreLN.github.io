@@ -32,28 +32,28 @@ function SideMenu({ onMove, isMusicOn }) {
         <ul>
           <li>
             {selected === "home" ? (
-              <Button onClick={homePageHandler}>{"<HOME/>"}</Button>
+              <Button onClick={homePageHandler}>{"<HOME />"}</Button>
             ) : (
               <Button onClick={homePageHandler}>Home</Button>
             )}
           </li>
           <li>
             {selected === "project" ? (
-              <Button onClick={ProjectPageHandler}>{"<PROJECTS/>"}</Button>
+              <Button onClick={ProjectPageHandler}>{"<PROJECTS />"}</Button>
             ) : (
               <Button onClick={ProjectPageHandler}>Projects</Button>
             )}
           </li>
           <li>
             {selected === "about" ? (
-              <Button onClick={aboutPageHandler}>{"<ABOUT/>"}</Button>
+              <Button onClick={aboutPageHandler}>{"<ABOUT />"}</Button>
             ) : (
               <Button onClick={aboutPageHandler}>About</Button>
             )}
           </li>
           <li>
             {selected === "contact" ? (
-              <Button onClick={ContactPageHandler}>{"<CONTACT/>"}</Button>
+              <Button onClick={ContactPageHandler}>{"<CONTACT />"}</Button>
             ) : (
               <Button onClick={ContactPageHandler}>Contact</Button>
             )}
