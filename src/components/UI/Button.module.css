@@ -17,7 +17,6 @@
 
 .button:hover,
 .button:active {
-  border-bottom: white 2px solid;
   transform: scale(1.2);
   border-radius: 0%;
 }
